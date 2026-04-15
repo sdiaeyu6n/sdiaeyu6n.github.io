@@ -1,0 +1,1 @@
+Overview of SEA and CommonSketch. Left: SEA quantifies abstraction efficiency by balancing recognizability and detail. High scores (top-left) favor simple yet identifiable sketches, while low scores (bottom-right) denote ambiguity or over-detail. Right: CommonSketch includes element-level annotations and captions, enabling element-aware evaluation of sketch abstraction.

@@ -1,0 +1,3 @@
+Overview of our study on demographic-conditioned failures in instruction-guided I2I portrait editing. We build a controlled
+benchmark from FairFace and pair source portraits with edit prompts. For each image–prompt pair, we run three I2I editing models to
+generate outputs. For diagnosing soft erasure and stereotype replacement, we evaluate iedit; for feature prompt mitigation, we add a feature prompt pfeat and re-run editing. Outputs are assessed via human evaluation and a VLM ensemble.

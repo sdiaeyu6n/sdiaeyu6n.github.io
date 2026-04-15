@@ -1,0 +1,1 @@
+Overview of the StableSketcher framework and the SketchDUO dataset. StableSketcher generates sketch images from text prompts using Stable Diffusion with a fine-tuned VAE and improves prompt fidelity through VQA-based reward feedback. SketchDUO provides the sketch images, captions, and QA sets.

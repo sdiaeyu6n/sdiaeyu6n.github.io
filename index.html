@@ -47,8 +47,17 @@
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
-              <div class="pub-figure-placeholder">Representative figure to add (`images/pubs/sea.jpg`)</div>
-              <p class="pub-abstract">A sketch is a distilled form of visual abstraction that conveys core concepts through simplified strokes while omitting extraneous detail. This paper introduces SEA, a reference-free metric for abstraction efficiency that evaluates semantic retention under visual economy, and presents CommonSketch, a semantically annotated sketch dataset for element-level evaluation.</p>
+              <div class="pub-fig-grid">
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/sea/teaser.png" alt="SEA teaser figure">
+                  <figcaption class="pub-caption">Overview of SEA and CommonSketch. Left: SEA quantifies abstraction efficiency by balancing recognizability and detail. High scores favor simple yet identifiable sketches, while low scores denote ambiguity or over-detail. Right: CommonSketch includes element-level annotations and captions, enabling element-aware evaluation of sketch abstraction.</figcaption>
+                </figure>
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/sea/metric.png" alt="SEA metric computation figure">
+                  <figcaption class="pub-caption">Computation pipeline and case-based interpretation of the SEA metric. SEA combines class recognizability P, commonsense element space E, and visually grounded elements V, then maps reward-penalty balance to a bounded score SEA in (-1, 1).</figcaption>
+                </figure>
+              </div>
+              <p class="pub-abstract">A sketch is a distilled form of visual abstraction that conveys core concepts through simplified yet purposeful strokes while omitting extraneous detail. Despite its expressive power, quantifying abstraction efficiency remains challenging. SEA introduces a reference-free metric that evaluates how economically a sketch preserves class-defining semantics, and CommonSketch provides 23,100 semantically annotated sketches across 300 classes for systematic element-level evaluation.</p>
             </div>
           </details>
         </li>
@@ -59,8 +68,13 @@
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
-              <div class="pub-figure-placeholder">Representative figure to add (`images/pubs/cbd_scirep.jpg`)</div>
-              <p class="pub-abstract">Abstract to add. Automatic extraction from this publisher page is unreliable in this environment, so please provide the final abstract text you want displayed.</p>
+              <div class="pub-fig-grid">
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/ercp/fig1.png" alt="ERCP study flow chart">
+                  <figcaption class="pub-caption">Study flow chart for two-stage validation. The DUMC cohort supports development/internal validation, and independent SCHBC/KHNMC cohorts support external validation, with SMOTE and curated synthetic data used during training.</figcaption>
+                </figure>
+              </div>
+              <p class="pub-abstract">This study develops and validates a machine learning model for common bile duct stone prediction using synthetic data augmentation. Across internal and external validation, the model achieved strong AUROC and substantially reduced unnecessary ERCP procedures while maintaining low false-negative rates, outperforming existing clinical guideline baselines.</p>
             </div>
           </details>
         </li>
@@ -71,8 +85,13 @@
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
-              <div class="pub-figure-placeholder">Representative figure to add (`images/pubs/exposing_blindspots.jpg`)</div>
-              <p class="pub-abstract">This work evaluates cultural bias in both text-to-image generation and image-to-image editing under a unified protocol across six countries and multiple cultural categories. The analysis shows country-agnostic defaults, cultural fidelity erosion under iterative edits, and superficial cue usage rather than context-aware cultural adaptation.</p>
+              <div class="pub-fig-grid">
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/blindspots/framework.png" alt="Blindspots framework figure">
+                  <figcaption class="pub-caption">Overall framework overview: schema inputs (six countries, eight categories, era-aware prompts), experimental pipeline (T2I and I2I studies), and multi-layered evaluation integrating automatic metrics, culture-aware metrics, and human evaluation.</figcaption>
+                </figure>
+              </div>
+              <p class="pub-abstract">Generative image models can produce strong visuals while still misrepresenting culture. This paper provides a unified benchmark across six countries and multiple categories to compare text-to-image generation and image-to-image editing. Results show Global-North defaults, fidelity erosion under iterative edits, and superficial stylistic cues instead of context-aware cultural edits.</p>
             </div>
           </details>
         </li>
@@ -83,8 +102,13 @@
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
-              <div class="pub-figure-placeholder">Representative figure to add (`images/pubs/navigation_failures.jpg`)</div>
-              <p class="pub-abstract">This paper investigates failure modes in foundation-model navigation reasoning across complete information, incomplete information, and safety-critical settings. Despite high aggregate success rates, models exhibit structural collapse, hallucinated reasoning, constraint violations, and unsafe decisions in critical cases.</p>
+              <div class="pub-fig-grid">
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/beforewetrustthem/fig2-overview.png" alt="Before We Trust Them overview figure">
+                  <figcaption class="pub-caption">Overview of three evaluation settings: reasoning with complete spatial information, incomplete spatial information, and safety-relevant information. The prompts highlight task-difficulty phrases and critical contextual clues.</figcaption>
+                </figure>
+              </div>
+              <p class="pub-abstract">High success rates on navigation tasks do not necessarily imply reliable decision making by foundation models. Across six diagnostic tasks in three settings, the study finds structural failures, hallucinated reasoning, constraint violations, and unsafe decisions, demonstrating the need for failure-focused evaluation beyond aggregate scores.</p>
             </div>
           </details>
         </li>
@@ -97,7 +121,9 @@
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
-              <div class="pub-figure-placeholder">Representative figure to add (`images/pubs/bblink.jpg`)</div>
+              <div class="pub-fig-grid">
+                <div class="pub-figure-placeholder">Figure file not provided for this paper.</div>
+              </div>
               <p class="pub-abstract">English summary: The paper designs a dedicated delivery platform based on UX analysis for visually impaired users. The core contribution is an accessibility-oriented interaction flow that reduces usability barriers in real service contexts.</p>
             </div>
           </details>
@@ -108,8 +134,17 @@
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
-              <div class="pub-figure-placeholder">Representative figure to add (`images/pubs/demographic_misrepresentation.jpg`)</div>
-              <p class="pub-abstract">This study analyzes demographic-conditioned failures in instruction-guided image-to-image portrait editing. It identifies soft erasure and stereotype replacement, and shows that identity preservation failures are uneven across demographics while prompt-level identity constraints can reduce drift for minority groups.</p>
+              <div class="pub-fig-grid">
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/demomis/figure0.png" alt="Demographic misrepresentation qualitative figure">
+                  <figcaption class="pub-caption">Qualitative examples of demographic-conditioned failures in image-to-image editing across prompts and source demographics.</figcaption>
+                </figure>
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/demomis/figure2.png" alt="Demographic misrepresentation pipeline figure">
+                  <figcaption class="pub-caption">Study overview: controlled benchmark from FairFace, three I2I editors, and evaluation of soft erasure, stereotype replacement, and feature-prompt mitigation with human and VLM-based assessment.</figcaption>
+                </figure>
+              </div>
+              <p class="pub-abstract">Demographic bias in text-to-image generation is well studied, but demographic-conditioned failures in instruction-guided image-to-image editing remain underexplored. This paper formalizes soft erasure and stereotype replacement, shows uneven identity preservation across demographics, and demonstrates that prompt-level identity constraints can reduce demographic drift without model retraining.</p>
             </div>
           </details>
         </li>
@@ -120,8 +155,13 @@
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
-              <div class="pub-figure-placeholder">Representative figure to add (`images/pubs/cgqr_net.jpg`)</div>
-              <p class="pub-abstract">The paper proposes a contour-guided query refinement framework for cardiac ultrasound segmentation under low contrast, noise, and domain shift. By combining high-resolution features, contour-derived queries, and dual-head supervision, the method improves boundary precision and generalization across datasets.</p>
+              <div class="pub-fig-grid">
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/cardiac/Figure_1.png" alt="CGQR-Net architecture figure">
+                  <figcaption class="pub-caption">Architecture of CGQR-Net: HRNet extracts multi-resolution features, contour-guided queries refine fused features through cross-attention, and dual heads produce segmentation and boundary outputs.</figcaption>
+                </figure>
+              </div>
+              <p class="pub-abstract">Accurate cardiac ultrasound segmentation is difficult under low contrast, speckle noise, irregular boundaries, and domain shifts. CGQR-Net integrates multi-resolution features with contour-derived structural priors for boundary-aware refinement, improving segmentation accuracy, boundary precision, and cross-dataset robustness.</p>
             </div>
           </details>
         </li>
@@ -132,8 +172,17 @@
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
-              <div class="pub-figure-placeholder">Representative figure to add (`images/pubs/stablesketcher.jpg`)</div>
-              <p class="pub-abstract">Abstract to add. If you share the final abstract text and representative figure, I can place them here immediately.</p>
+              <div class="pub-fig-grid">
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/stablesketcher/teaser.png" alt="StableSketcher teaser figure">
+                  <figcaption class="pub-caption">Overview of StableSketcher and SketchDUO. StableSketcher improves prompt fidelity in sketch generation via a fine-tuned VAE and VQA-based reward feedback.</figcaption>
+                </figure>
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/stablesketcher/data.png" alt="SketchDUO construction figure">
+                  <figcaption class="pub-caption">SketchDUO construction process from class selection and sketch collection to GPT-4o captioning, manual refinement, and TIFA-based QA creation.</figcaption>
+                </figure>
+              </div>
+              <p class="pub-abstract">StableSketcher improves pixel-based hand-drawn sketch generation by fine-tuning the VAE for sketch-oriented latent decoding and introducing a VQA-based reinforcement signal for text-image alignment. The work also presents SketchDUO, a sketch-caption-QA dataset designed for instance-level training and evaluation.</p>
             </div>
           </details>
         </li>
