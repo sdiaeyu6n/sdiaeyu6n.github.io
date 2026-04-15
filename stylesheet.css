@@ -128,7 +128,6 @@ p {
 }
 
 .section-note,
-.pub-meta,
 .project-meta {
   color: var(--muted);
   font-size: 0.94rem;
@@ -146,6 +145,27 @@ p {
 .pub-title {
   font-weight: 650;
   line-height: 1.45;
+}
+
+.pub-authors {
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+
+.pub-venue {
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
+.pub-summary {
+  margin-top: 0.35rem;
+  color: #374151;
+  font-size: 0.93rem;
+}
+
+.pub-links {
+  margin-top: 0.35rem;
+  font-size: 0.92rem;
 }
 
 .pub-title a {
@@ -181,6 +201,26 @@ p {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fcfdff;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 640px;
+  margin-top: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  display: block;
+}
+
+.button-muted {
+  color: #6b7280;
+  border-color: #cbd5e1;
+  pointer-events: none;
+  cursor: default;
+}
+
+a[aria-disabled="true"] {
+  text-decoration: none;
 }
 
 a {
