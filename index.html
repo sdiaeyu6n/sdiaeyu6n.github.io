@@ -1,398 +1,184 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Sieun Choi</title>
-    <meta name="author" content="Sieun Choi" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="stylesheet.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sieun Choi | Academic Homepage</title>
+  <meta name="description" content="Sieun Choi - M.S./Ph.D. Student in Artificial Intelligence at Dongguk University. Research in multimodal learning, human-robot interaction, and generative models.">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">Sieun Choi</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <body>
-    <!-- Page container -->
-    <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-      <tbody>
-        <tr><td style="padding:0">
+  <main class="container">
+    <section id="home" class="section hero">
+      <p class="eyebrow">Academic Homepage</p>
+      <h1>Sieun Choi</h1>
+      <p class="role">M.S./Ph.D. Student in Artificial Intelligence, Dongguk University</p>
+      <p class="summary">
+        I study multimodal AI systems that connect language, vision, and human interaction, with current work spanning
+        sketch understanding, generative models, and human-robot collaboration.
+      </p>
 
-          <!-- ===== HEADER ===== -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr>
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p class="name" style="text-align:center;">Sieun Choi</p>
-                  <p>
-                    I am an M.S. student in <a href="https://www.dongguk.edu/eng/">Artificial Intelligence</a> at
-                    <a href="https://www.dongguk.edu/eng/">Dongguk University</a> (Seoul, Korea), advised by
-                    <a href="https://www.ml.dongguk.edu/">Prof. Jihie Kim</a>. I will be a visiting researcher at
-                    Carnegie Mellon University’s <em>Bot Intelligence Group (BIG)</em>, supervised by <a href="https://www.ri.cmu.edu/ri-faculty/jean-oh/">Dr. Jean Oh</a>.
-                    My interests span <b>Multimodal Learning</b>, <b>Computer Vision</b>, <b>NLP</b>, <b>Robotics</b>, and <b>Reinforcement Learning</b>.
-                  </p>
-                  <p style="text-align:center">
-                    <a href="mailto:sieunchoi@dgu.ac.kr">sieunchoi@dgu.ac.kr</a> &nbsp;/&nbsp;
-                    <a href="mailto:sieunc@andrew.cmu.edu">sieunc@andrew.cmu.edu</a> &nbsp;/&nbsp;
-                    <a href="resume_251014.pdf">CV</a> &nbsp;/&nbsp;
-                    <a href="https://github.com/sdiaeyu6n" target="_blank" rel="noopener">GitHub</a> &nbsp;/&nbsp;
-                    <a href="https://linkedin.com/in/sieunchoi" target="_blank" rel="noopener">LinkedIn</a> &nbsp;/&nbsp;
-                    <a href="tel:+1-412-390-7089">+1-412-390-7089</a>
-                  </p>
-                </td>
-                <td style="padding:2.5%;width:37%;max-width:37%">
-                  <a href="images/profile.jpg">
-                    <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/profile.jpg" class="hoverZoomLink">
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="interests">
+        <span>Human-Computer/Robot Interaction</span>
+        <span>Multimodal Learning</span>
+        <span>Generative Models</span>
+      </div>
 
-          <!-- ===== RESEARCH INTERESTS ===== -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr>
-                <td style="padding:16px;width:100%;vertical-align:middle">
-                  <h2>Research Interests</h2>
-                  <p>Multimodal Learning · Computer Vision · Natural Language Processing · Robotics · Reinforcement Learning</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="quick-links" aria-label="Academic links">
+        <a class="button" href="data/SieunChoi-CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a class="button" href="https://scholar.google.com/citations?user=7Nv0vMYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="button" href="https://github.com/sdiaeyu6n" target="_blank" rel="noopener">GitHub</a>
+        <a class="button" href="https://www.linkedin.com/in/sieunchoi/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="button" href="mailto:sieunchoi@dgu.ac.kr">Email</a>
+      </div>
 
-          <!-- ===== HIGHLIGHTED RESEARCH / PROJECTS ===== -->
-          <table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;">
-            <tbody>
+      <div class="panel">
+        <h2>Selected Publications</h2>
+        <ol class="pub-list compact">
+          <li>
+            <div class="pub-title">SEA: Evaluating Sketch Abstraction Efficiency via Element-level Commonsense Visual Question Answering</div>
+            <div class="pub-meta">J. Park, <strong>S. Choi</strong>, J. Seo, M. Sohn, Y. Kim, and J. Kim. <em>CVPR 2026</em> (Accepted).</div>
+          </li>
+          <li class="first-author">
+            <div class="pub-title">Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models</div>
+            <div class="pub-meta">H. Seo*, <strong>S. Choi*</strong>, M. Hong*, Y. Zhou, J. Kim, L. Ismaila, N. Etori, M. Agarwal, Z. Liu, J. Kim, and J. Oh. <em>IASEAI 2026 Main Conference</em> (Accepted).</div>
+          </li>
+          <li>
+            <div class="pub-title">Machine Learning Prediction of Common Bile Duct Stones Using Synthetic Data to Guide Emergency ERCP Decisions</div>
+            <div class="pub-meta">S. Kang*, N. Park*, I. S. Shin*, E. Lee, <strong>S. Choi</strong>, et al. <em>Scientific Reports</em>, 2026.</div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-              <!-- Sketch Generation + VQA Reward (highlight) -->
-              <tr onmouseout="sketch_stop()" onmouseover="sketch_start()" bgcolor="#ffffd0">
-                <td style="padding:16px;width:20%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id="sketch_image">
-                      <video width="100%" height="100%" muted autoplay loop>
-                        <source src="images/sketch_demo.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                    <img src="images/sketch_thumb.jpg" width="160" alt="sketch project teaser" />
-                  </div>
-                  <script>
-                    function sketch_start(){ document.getElementById('sketch_image').style.opacity = "1"; }
-                    function sketch_stop(){ document.getElementById('sketch_image').style.opacity = "0"; }
-                    sketch_stop();
-                  </script>
-                </td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Diffusion Model Enhancement for Sketch Generation via VQA Feedback</span>
-                  <br><strong>Sieun Choi</strong>
-                  <br><em>Under review</em> &nbsp; / &nbsp; <em>Patent application in progress</em>
-                  <p></p>
-                  <p>
-                    A pixel-based sketch generation framework that adapts Stable Diffusion to abstract, human-drawn, instance-level sketches.
-                    We introduce a VQA-based reward to improve semantic alignment with textual prompts and release an instance-level sketch
-                    dataset with captions and QA pairs.
-                  </p>
-                </td>
-              </tr>
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I am an M.S./Ph.D. student in Artificial Intelligence at Dongguk University, advised by Prof. Jihie Kim.
+        My research focuses on multimodal learning and interactive AI, especially at the intersection of vision-language
+        modeling, sketch-based reasoning, and human-robot interaction.
+      </p>
+      <p>
+        I previously worked as a Visiting Research Scholar at Carnegie Mellon University (Bot Intelligence Group),
+        supervised by Prof. Jean Oh (Aug 2025 to Feb 2026). I also conducted research at Dongguk University's AI Lab
+        and completed a visiting scholar program at Purdue University (M2M Lab).
+      </p>
+      <p>
+        For Ph.D. study, I am interested in building reliable multimodal systems that can reason about human intent,
+        perception, and context in real-world interaction settings.
+      </p>
+    </section>
 
-              <!-- CBD stone prediction -->
-              <tr onmouseout="cbd_stop()" onmouseover="cbd_start()">
-                <td style="padding:16px;width:20%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id="cbd_image"><img src="images/cbd_after.jpg" width="160" alt="clinical project after"></div>
-                    <img src="images/cbd_before.jpg" width="160" alt="clinical project before">
-                  </div>
-                  <script>
-                    function cbd_start(){ document.getElementById('cbd_image').style.opacity = "1"; }
-                    function cbd_stop(){ document.getElementById('cbd_image').style.opacity = "0"; }
-                    cbd_stop();
-                  </script>
-                </td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">ML-Based Prediction of CBD Stones for ERCP decision-making</span>
-                  <br><strong>Sieun Choi</strong>
-                  <br><em>Preprint</em>
-                  <p></p>
-                  <p>
-                    Decision-tree stacking ensemble with feature selection and SMOTE augmentation, developed with the Dongguk University
-                    Medical Center to assist emergency-department ERCP decisions; ongoing follow-up on imaging-based CBD diameter measurement.
-                  </p>
-                </td>
-              </tr>
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <p class="section-note">* indicates equal contribution. Entries marked <span class="label-first">First Author</span> include first-author or co-first-author roles.</p>
+      <!-- TODO: Replace placeholder links with final URLs for paper/project/code when available. -->
+      <ol class="pub-list">
+        <li>
+          <div class="pub-title">SEA: Evaluating Sketch Abstraction Efficiency via Element-level Commonsense Visual Question Answering</div>
+          <div class="pub-meta">J. Park, <strong>S. Choi</strong>, J. Seo, M. Sohn, Y. Kim, and J. Kim.</div>
+          <div class="pub-meta"><em>CVPR 2026</em> (Accepted).</div>
+          <div class="pub-links"><a href="https://scholar.google.com/citations?user=7Nv0vMYAAAAJ" target="_blank" rel="noopener">Scholar Entry</a></div>
+        </li>
 
-              <!-- RL for malicious packet access control -->
-              <tr onmouseout="rl_stop()" onmouseover="rl_start()" bgcolor="#ffffd0">
-                <td style="padding:16px;width:20%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id="rl_image"><img src="images/rl_after.jpg" width="160" alt="rl after"></div>
-                    <img src="images/rl_before.jpg" width="160" alt="rl before">
-                  </div>
-                  <script>
-                    function rl_start(){ document.getElementById('rl_image').style.opacity = "1"; }
-                    function rl_stop(){ document.getElementById('rl_image').style.opacity = "0"; }
-                    rl_stop();
-                  </script>
-                </td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Dynamic Access Management of Malicious Packets with Reinforcement Learning</span>
-                  <br><strong>Sieun Choi</strong>
-                  <p></p>
-                  <p>
-                    PPO for a base block/unblock policy, followed by SAC fine-tuning to optimize blocking time and risk; a step toward
-                    instance-adaptive, learning-based cybersecurity policies.
-                  </p>
-                </td>
-              </tr>
+        <li>
+          <div class="pub-title">Machine Learning Prediction of Common Bile Duct Stones Using Synthetic Data to Guide Emergency ERCP Decisions</div>
+          <div class="pub-meta">S. Kang*, N. Park*, I. S. Shin*, E. Lee, <strong>S. Choi</strong>, J. Jung, J. K. Lee, Y. N. Lee, J. H. Moon, K. R. Joo, J. S. Kim, and J. Kim.</div>
+          <div class="pub-meta"><em>Scientific Reports</em>, 2026.</div>
+          <div class="pub-links"><a href="https://scholar.google.com/citations?user=7Nv0vMYAAAAJ" target="_blank" rel="noopener">Scholar Entry</a></div>
+        </li>
 
-              <!-- Mobile DLP capstone -->
-              <tr onmouseout="dlp_stop()" onmouseover="dlp_start()">
-                <td style="padding:16px;width:20%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id="dlp_image"><img src="images/dlp_after.jpg" width="160" alt="dlp after"></div>
-                    <img src="images/dlp_before.jpg" width="160" alt="dlp before">
-                  </div>
-                  <script>
-                    function dlp_start(){ document.getElementById('dlp_image').style.opacity = "1"; }
-                    function dlp_stop(){ document.getElementById('dlp_image').style.opacity = "0"; }
-                    dlp_stop();
-                  </script>
-                </td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Mobile Data Loss Prevention for Real-Time Personal Information Monitoring</span>
-                  <br><strong>Sieun Choi</strong> · <em>Undergraduate Capstone (2022)</em>
-                  <p></p>
-                  <p>
-                    Android app that detects PII leakage from mobile traffic via packet-capture API; regex-based matching against a
-                    sensitive-patterns database with a designed schema.
-                  </p>
-                </td>
-              </tr>
+        <li class="first-author">
+          <div class="pub-title">Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models <span class="label-first">First Author</span></div>
+          <div class="pub-meta">H. Seo*, <strong>S. Choi*</strong>, M. Hong*, Y. Zhou, J. Kim, L. Ismaila, N. Etori, M. Agarwal, Z. Liu, J. Kim, and J. Oh.</div>
+          <div class="pub-meta"><em>IASEAI 2026 Main Conference</em> (Accepted).</div>
+          <div class="pub-links"><a href="https://scholar.google.com/citations?user=7Nv0vMYAAAAJ" target="_blank" rel="noopener">Scholar Entry</a></div>
+        </li>
 
-            </tbody>
-          </table>
+        <li>
+          <div class="pub-title">Before We Trust Them: Decision-Making Failures in Navigation of Foundation Models</div>
+          <div class="pub-meta">J. Han*, J. Seo*, J. Min*, <strong>S. Choi</strong>, H. Seo, J. Kim, and J. Oh.</div>
+          <div class="pub-meta"><em>AAAI 2026 Summer Symposium Series</em> (Accepted).</div>
+          <div class="pub-links"><a href="https://scholar.google.com/citations?user=7Nv0vMYAAAAJ" target="_blank" rel="noopener">Scholar Entry</a></div>
+        </li>
 
-          <!-- ===== EDUCATION ===== -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr><td style="padding:16px;width:100%;vertical-align:middle"><h2>Education</h2></td></tr>
-            </tbody>
-          </table>
-          <table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/dgu_logo.jpg" width="160" alt="DGU logo"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Dongguk University — M.S. in Artificial Intelligence</span><br>
-                  <em>Mar 2024 – Feb 2026 (expected)</em> · GPA: <b>4.5/4.5</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/dgu_logo.jpg" width="160" alt="DGU logo"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Dongguk University — B.E. in Information &amp; Communication Engineering</span><br>
-                  <em>Mar 2019 – Feb 2024</em> · Magna Cum Laude · GPA: 4.16/4.5 (Major 4.29/4.5)
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/purdue_logo.jpg" width="160" alt="Purdue logo"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Purdue University — Visiting Scholar</span><br>
-                  <em>Oct 2021 – Dec 2021</em> · IoT-based farm fire detection (LoRa) and IR-guided drone navigation.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <li>
+          <div class="pub-title">Contour-Guided Query-Based Feature Fusion for Boundary-Aware and Generalizable Cardiac Ultrasound Segmentation</div>
+          <div class="pub-meta">Z. Ullah, <strong>S. Choi</strong>, and J. Kim.</div>
+          <div class="pub-meta"><em>arXiv preprint</em>, 2026 (Under Review).</div>
+          <div class="pub-links">
+            <span class="placeholder">Paper link to add</span>
+          </div>
+        </li>
 
-          <!-- ===== RESEARCH / WORK EXPERIENCE ===== -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr><td style="padding:16px;width:100%;vertical-align:middle"><h2>Experience</h2></td></tr>
-            </tbody>
-          </table>
-          <table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/cmu_big.jpg" width="160" alt="CMU BIG"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Bot Intelligence Group (CMU) — Visiting Researcher</span><br>
-                  <em>Aug 2025 – Feb 2026 (expected)</em><br>
-                  Culture-aware audits for VLMs, standardized bias metrics, and mitigation; building a web platform for culturally grounded data curation and analyses.
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/ta.jpg" width="160" alt="TA"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Teaching Assistant — Dongguk University</span><br>
-                  Computer Network &amp; Security (Spring ’24, ’25) · Computer System (Fall ’24, Spring ’25) · Data Science Capstone Design (Spring ’24, Fall ’24, Spring ’25)
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/cipherome_logo.jpg" width="160" alt="Cipherome"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Technology Team Intern — Cipherome, Inc. (San Jose, CA)</span><br>
-                  <em>Mar 2023 – Feb 2024</em> · Built statistical/ML modules and web UIs for COMPASS; prepared/validated clinical datasets (Samsung Medical Center, Kangwon National Univ.); designed demo site and hackathon materials.
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/dgu_ai_lab.jpg" width="160" alt="AI Lab"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Undergraduate Researcher — AI Lab, Dongguk University</span><br>
-                  <em>Feb 2022 – Dec 2022</em> · NLP on statements from abuse victims; anaphora resolution and colloquial-Korean preprocessing (with Police Administration).
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <li>
+          <div class="pub-title">StableSketcher: Enhancing Diffusion Model for Pixel-based Sketch Generation via Visual Question Answering Feedback</div>
+          <div class="pub-meta">J. Park, <strong>S. Choi</strong>, J. Seo, and J. Kim.</div>
+          <div class="pub-meta"><em>arXiv preprint</em>, 2025 (Under Review).</div>
+          <div class="pub-links">
+            <span class="placeholder">Paper/code link to add</span>
+          </div>
+        </li>
 
-          <!-- ===== PUBLICATIONS (Selected) ===== -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr><td style="padding:16px;width:100%;vertical-align:middle"><h2>Publications</h2></td></tr>
-            </tbody>
-          </table>
-          <table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/paper_sketch.jpg" width="160" alt="sketch paper"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Diffusion Model Enhancement for Sketch Generation via Visual Question Answering Feedback</span><br>
-                  <strong>Sieun Choi</strong> — Under review; Patent application in progress.
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/paper_cbd.jpg" width="160" alt="cbd paper"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">ML-Based Prediction of CBD Stones for guiding ERCP decision-making in the Emergency Department</span><br>
-                  <strong>Sieun Choi</strong> — Preprint.
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id="kips_image"><img src="images/kips_after.jpg" width="160" alt="kips after"></div>
-                    <img src="images/kips_before.jpg" width="160" alt="kips before">
-                  </div>
-                  <script>
-                    function kips_start(){ document.getElementById('kips_image').style.opacity = "1"; }
-                    function kips_stop(){ document.getElementById('kips_image').style.opacity = "0"; }
-                    kips_stop();
-                  </script>
-                </td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Dedicated Delivery Platform Based on the User Experience of the Visually Impaired</span><br>
-                  <strong>Sieun Choi</strong> — Proc. of the Korea Information Processing Society Conference, 2022.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <li>
+          <div class="pub-title">Dedicated Delivery Platform Based on the User Experience of the Visually Impaired</div>
+          <div class="pub-meta">Y. Kim, Y. Kim, Y. Shin, J. Lee, and <strong>S. Choi</strong>.</div>
+          <div class="pub-meta"><em>KIPS</em>, 2022, pp. 974-976.</div>
+          <div class="pub-links">
+            <span class="placeholder">Paper link to add</span>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-          <!-- ===== ADDITIONAL PROJECTS ===== -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr><td style="padding:16px;width:100%;vertical-align:middle"><h2>Additional Projects</h2></td></tr>
-            </tbody>
-          </table>
-          <table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/sea.jpg" width="160" alt="SEA"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">SEA: Evaluating Sketch Abstraction Efficiency via Element-level Commonsense VQA</span><br>
-                  <em>Jul 2025 – ongoing</em> — Reference-free metric for sketch abstraction; element-level grounding benchmark (planned public release).
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>VLM-guided Collaborative Robotic Cinematography</h3>
+        <p class="project-meta">Oct 2025 to Jan 2026</p>
+        <p>Designed a VLM-driven, director-in-the-loop workflow for stop-motion filmmaking using a robot arm (xArm 6).</p>
+      </div>
+      <div class="project-card">
+        <h3>Mobile Data Loss Prevention System for Real-Time Personal Data Monitoring</h3>
+        <p class="project-meta">Undergraduate Capstone, Aug 2022 to Dec 2022</p>
+        <p>Developed an Android app to monitor network traffic for personal data leakage using schema design and regex-based detection.</p>
+      </div>
+      <div class="project-card placeholder-card">
+        <h3>Additional Research Project (Placeholder)</h3>
+        <p>Add one more representative project with a 2-3 sentence summary and links if available.</p>
+      </div>
+    </section>
 
-          <!-- ===== AWARDS ===== -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr><td style="padding:16px;width:100%;vertical-align:middle"><h2>Awards &amp; Honors</h2></td></tr>
-            </tbody>
-          </table>
-          <table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/award_ict.jpg" width="160" alt="ICT award"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">ICT Challenge 2024 — 1st Place</span><br>
-                  Ministry of Science and ICT, Korea (Sep 2024). Multimodal clinical model with 3D-vision encoder integration into LLaVA.
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/award_kics.jpg" width="160" alt="KICS award"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">ICT Convergence Services Idea Competition (5G &amp; AI) — 1st Place</span><br>
-                  KICS (Feb 2021). Smart-kindergarten with real-time sensing, abuse/anomaly detection, and automated reporting.
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/award_misc.jpg" width="160" alt="scholarships"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Scholarships &amp; Honors</span><br>
-                  Merit-Based Scholarship (’22–’23), Dean’s List (’20–’22), Software-Centered Academic Excellence (’21),
-                  Dongguk Leader Scholarship (’21), Academic Excellence Scholarship (’20).
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <section id="cv" class="section">
+      <h2>CV</h2>
+      <p>Download my current curriculum vitae here:</p>
+      <p><a class="button" href="data/SieunChoi-CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a></p>
+      <!-- TODO: Replace data/SieunChoi-CV.pdf when you upload a newer version. -->
+    </section>
 
-          <!-- ===== SKILLS ===== -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr><td style="padding:16px;width:100%;vertical-align:middle"><h2>Skills</h2></td></tr>
-            </tbody>
-          </table>
-          <table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr>
-                <td style="padding:16px;width:100%;vertical-align:middle">
-                  <p><b>Programming</b>: Python, C, SQL</p>
-                  <p><b>Libraries</b>: PyTorch, TensorFlow/Keras, scikit-learn, MONAI, OpenCV, SimpleITK, NumPy, pandas</p>
-                  <p><b>Systems &amp; Ops</b>: FastAPI, Docker, MySQL, AWS, Git, GitHub Actions, Linux (Ubuntu), LaTeX</p>
-                  <p><b>Languages</b>: English (IELTS 8.0), Korean (Native)</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <!-- ===== OTHER ===== -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr><td style="padding:16px;width:100%;vertical-align:middle"><h2>Other</h2></td></tr>
-            </tbody>
-          </table>
-          <table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/ijcai_logo.jpg" width="160" alt="IJCAI"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">IJCAI 2024 Student Volunteer — Jeju, Korea</span><br>
-                  <em>Aug 2024</em>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"><img src="images/dgu_exchange.jpg" width="160" alt="supporter"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">Exchange Student Supporter — Vice President, Dongguk University</span><br>
-                  <em>Aug 2019 – Dec 2019</em>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <!-- ===== FOOTER ===== -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0">
-                  <p style="text-align:center;font-size:small;color:#888;margin-top:20px;">
-                    Website template from <a href="https://jonbarron.info" target="_blank" rel="noopener">Jon Barron</a>.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-        </td></tr>
-      </tbody>
-    </table>
-  </body>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sieunchoi@dgu.ac.kr">sieunchoi@dgu.ac.kr</a></p>
+      <p>Google Scholar: <a href="https://scholar.google.com/citations?user=7Nv0vMYAAAAJ" target="_blank" rel="noopener">scholar profile</a></p>
+      <p>GitHub: <a href="https://github.com/sdiaeyu6n" target="_blank" rel="noopener">sdiaeyu6n</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/sieunchoi/" target="_blank" rel="noopener">sieunchoi</a></p>
+      <p class="contact-note">Location: Seoul, South Korea</p>
+    </section>
+  </main>
+</body>
 </html>
