@@ -85,7 +85,7 @@ body {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 240px;
+  grid-template-columns: minmax(0, 1fr) 180px;
   gap: 1.2rem;
   align-items: start;
 }
@@ -96,10 +96,10 @@ body {
 }
 
 .profile-photo {
-  width: 220px;
-  height: 220px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 50%;
   border: 1px solid var(--line);
 }
 
@@ -303,7 +303,7 @@ p {
   }
 
   .profile-photo {
-    width: min(280px, 100%);
+    width: min(150px, 100%);
     height: auto;
     aspect-ratio: 1 / 1;
   }
