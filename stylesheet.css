@@ -424,6 +424,12 @@ p {
   font-size: 0.93rem;
 }
 
+.experience-supervisor {
+  margin: 0.22rem 0 0;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
 .experience-meta {
   margin: 0.45rem 0 0;
   color: var(--muted);
