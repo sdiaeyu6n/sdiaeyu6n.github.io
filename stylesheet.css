@@ -231,6 +231,14 @@ p {
 
 .pub-with-logo {
   position: relative;
+  padding-right: 0;
+}
+
+.pub-with-logo > .pub-title,
+.pub-with-logo > .pub-authors,
+.pub-with-logo > .pub-venue,
+.pub-with-logo > .pub-summary,
+.pub-with-logo > .pub-links {
   padding-right: 64px;
 }
 
@@ -512,6 +520,14 @@ a {
   }
 
   .pub-with-logo {
+    padding-right: 0;
+  }
+
+  .pub-with-logo > .pub-title,
+  .pub-with-logo > .pub-authors,
+  .pub-with-logo > .pub-venue,
+  .pub-with-logo > .pub-summary,
+  .pub-with-logo > .pub-links {
     padding-right: 0;
   }
 
