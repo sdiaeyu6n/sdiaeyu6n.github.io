@@ -50,14 +50,14 @@
               <div class="pub-fig-grid">
                 <figure class="pub-figure-block">
                   <img class="pub-figure" src="images/pubs/sea/teaser.png" alt="SEA teaser figure">
-                  <figcaption class="pub-caption">Overview of SEA and CommonSketch. Left: SEA quantifies abstraction efficiency by balancing recognizability and detail. High scores favor simple yet identifiable sketches, while low scores denote ambiguity or over-detail. Right: CommonSketch includes element-level annotations and captions, enabling element-aware evaluation of sketch abstraction.</figcaption>
+                  <figcaption class="pub-caption">Overview of SEA and CommonSketch. Left: SEA quantifies abstraction efficiency by balancing recognizability and detail. High scores (top-left) favor simple yet identifiable sketches, while low scores (bottom-right) denote ambiguity or over-detail. Right: CommonSketch includes element-level annotations and captions, enabling element-aware evaluation of sketch abstraction.</figcaption>
                 </figure>
                 <figure class="pub-figure-block">
                   <img class="pub-figure" src="images/pubs/sea/metric.png" alt="SEA metric computation figure">
-                  <figcaption class="pub-caption">Computation pipeline and case-based interpretation of the SEA metric. SEA combines class recognizability P, commonsense element space E, and visually grounded elements V, then maps reward-penalty balance to a bounded score SEA in (-1, 1).</figcaption>
+                  <figcaption class="pub-caption">Computation pipeline and case-based interpretation of the SEA metric. Given a sketch and its class label, SEA combines class recognizability P from a classifier with the commonsense element space E extracted by an LLM and the number of visually grounded elements V identified by a VLM. It then computes a reward-penalty balance and maps it to a bounded score SEA in (-1,1), where higher scores indicate sketches that preserve recognizability with minimal yet sufficient visual detail. Illustrative cases show abstraction failure due to low recognizability (left), incomplete abstraction caused by excessive detail (middle), and abstraction-efficient sketching that achieves high recognizability with fewer expressed elements (right).</figcaption>
                 </figure>
               </div>
-              <p class="pub-abstract">A sketch is a distilled form of visual abstraction that conveys core concepts through simplified yet purposeful strokes while omitting extraneous detail. Despite its expressive power, quantifying abstraction efficiency remains challenging. SEA introduces a reference-free metric that evaluates how economically a sketch preserves class-defining semantics, and CommonSketch provides 23,100 semantically annotated sketches across 300 classes for systematic element-level evaluation.</p>
+              <p class="pub-abstract">A sketch is a distilled form of visual abstraction that conveys core concepts through simplified yet purposeful strokes while omitting extraneous detail. Despite its expressive power, quantifying the efficiency of semantic abstraction in sketches remains challenging. Existing evaluation methods that rely on reference images, low-level visual features, or recognition accuracy do not capture abstraction, the defining property of sketches. To address these limitations, we introduce SEA (Sketch Evaluation metric for Abstraction efficiency), a reference-free metric that assesses how economically a sketch represents class-defining visual elements while preserving semantic recognizability. These elements are derived per class from commonsense knowledge about features typically depicted in sketches. SEA leverages a visual question answering model to determine the presence of each element and returns a quantitative score that reflects semantic retention under visual economy. To support this metric, we present CommonSketch, the first semantically annotated sketch dataset, comprising 23,100 human-drawn sketches across 300 classes, each paired with a caption and element-level annotations. Experiments show that SEA aligns closely with human judgments and reliably discriminates levels of abstraction efficiency, while CommonSketch serves as a benchmark providing systematic evaluation of element-level sketch understanding across various vision-language models.</p>
             </div>
           </details>
         </li>
@@ -71,14 +71,15 @@
               <div class="pub-fig-grid">
                 <figure class="pub-figure-block">
                   <img class="pub-figure" src="images/pubs/ercp/fig1.png" alt="ERCP study flow chart">
-                  <figcaption class="pub-caption">Study flow chart for two-stage validation. The DUMC cohort supports development/internal validation, and independent SCHBC/KHNMC cohorts support external validation, with SMOTE and curated synthetic data used during training.</figcaption>
+                  <figcaption class="pub-caption">Study flow chart. This flowchart illustrates the patient selection and data allocation used for the two-stage validation framework. On the left, the DUMC cohort (2010-2023) is depicted for model development and internal validation. After applying exclusion criteria, 733 patients were separated into training, validation, and hold-out test subsets. The training set was augmented with SMOTE and integrated with curated synthetic data to form the final combined training dataset. The validation dataset facilitated hyperparameter optimization, and the hold-out test set was designated for final internal performance assessment. On the right, external validation was performed using a completely independent dataset from SCHBC and KHNMC (2023-2024).</figcaption>
                 </figure>
               </div>
-              <p class="pub-abstract">This study develops and validates a machine learning model for common bile duct stone prediction using synthetic data augmentation. Across internal and external validation, the model achieved strong AUROC and substantially reduced unnecessary ERCP procedures while maintaining low false-negative rates, outperforming existing clinical guideline baselines.</p>
+              <p class="pub-abstract">Endoscopic retrograde cholangiopancreatography (ERCP) remains the standard for common bile duct (CBD) stone removal. However, current guidelines often result in unnecessary procedures. This study aimed to develop and validate a machine learning model using synthetic data augmentation to improve CBD stone prediction. Electronic health records from patients with suspected CBD stones were analyzed from three independent tertiary centers (733 patients for internal validation, 348 for external validation). A large language model (LLM) generated curated synthetic data to augment the training dataset. The ExtraTrees classifier was selected after evaluating multiple algorithms. Model performance was assessed using AUROC, calibration curves, and decision curve analysis. Compared to existing clinical guidelines, the model substantially reduced unnecessary ERCPs while maintaining low false-negative rates and strong clinical utility.</p>
             </div>
           </details>
         </li>
-        <li class="first-author">
+        <li class="first-author pub-with-logo">
+          <img class="pub-logo" src="images/cmu-logo.png" alt="CMU logo">
           <div class="pub-title"><a href="https://arxiv.org/abs/2510.20042" target="_blank" rel="noopener">Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models</a> <span class="label-first">First Author</span></div>
           <div class="pub-authors">H. Seo*, <strong>S. Choi*</strong>, M. Hong*, Y. Zhou, J. Kim, L. Ismaila, N. Etori, M. Agarwal, Z. Liu, J. Kim, and J. Oh.</div>
           <div class="pub-venue"><em>IASEAI 2026 Main Conference</em> (Accepted).</div>
@@ -88,14 +89,15 @@
               <div class="pub-fig-grid">
                 <figure class="pub-figure-block">
                   <img class="pub-figure" src="images/pubs/blindspots/framework.png" alt="Blindspots framework figure">
-                  <figcaption class="pub-caption">Overall framework overview: schema inputs (six countries, eight categories, era-aware prompts), experimental pipeline (T2I and I2I studies), and multi-layered evaluation integrating automatic metrics, culture-aware metrics, and human evaluation.</figcaption>
+                  <figcaption class="pub-caption">Figure 2: Overall framework overview. (a) Schema inputs: six countries, eight categories, and three era-aware prompts. (b) Experimental pipeline: T2I base generation and three I2I editing studies. (c) Multi-layered evaluation: integrating automatic, culture-aware metrics, and human evaluation.</figcaption>
                 </figure>
               </div>
-              <p class="pub-abstract">Generative image models can produce strong visuals while still misrepresenting culture. This paper provides a unified benchmark across six countries and multiple categories to compare text-to-image generation and image-to-image editing. Results show Global-North defaults, fidelity erosion under iterative edits, and superficial stylistic cues instead of context-aware cultural edits.</p>
+              <p class="pub-abstract">Generative image models produce striking visuals yet often misrepresent culture. Prior work has examined cultural bias mainly in text-to-image (T2I) systems, leaving image-to-image (I2I) editors underexplored. We bridge this gap with a unified evaluation across six countries, an 8-category/36-subcategory schema, and era-aware prompts, auditing both T2I generation and I2I editing under a standardized protocol that yields comparable diagnostics. Using open models with fixed settings, we derive cross-country, cross-era, and cross-category evaluations. Our framework combines standard automatic metrics, a culture-aware retrieval-augmented VQA, and expert human judgments collected from native reviewers. To enable reproducibility, we release the complete image corpus, prompts, and configurations. Our study reveals three findings: (1) under country-agnostic prompts, models default to Global-North, modern-leaning depictions that flatten cross-country distinctions; (2) iterative I2I editing erodes cultural fidelity even when conventional metrics remain flat or improve; and (3) I2I models apply superficial cues (palette shifts, generic props) rather than era-consistent, context-aware changes, often retaining source identity for Global-South targets. These results highlight that culture-sensitive edits remain unreliable in current systems. Project page: https://seochan99.github.io/ECB</p>
             </div>
           </details>
         </li>
-        <li>
+        <li class="pub-with-logo">
+          <img class="pub-logo" src="images/cmu-logo.png" alt="CMU logo">
           <div class="pub-title"><a href="https://arxiv.org/abs/2601.05529" target="_blank" rel="noopener">Before We Trust Them: Decision-Making Failures in Navigation of Foundation Models</a></div>
           <div class="pub-authors">J. Han*, J. Seo*, J. Min*, <strong>S. Choi</strong>, H. Seo, J. Kim, and J. Oh.</div>
           <div class="pub-venue"><em>AAAI 2026 Summer Symposium Series</em> (Accepted).</div>
@@ -105,46 +107,10 @@
               <div class="pub-fig-grid">
                 <figure class="pub-figure-block">
                   <img class="pub-figure" src="images/pubs/beforewetrustthem/fig2-overview.png" alt="Before We Trust Them overview figure">
-                  <figcaption class="pub-caption">Overview of three evaluation settings: reasoning with complete spatial information, incomplete spatial information, and safety-relevant information. The prompts highlight task-difficulty phrases and critical contextual clues.</figcaption>
+                  <figcaption class="pub-caption">Overview of the three evaluation settings and representative input formats used in our evaluation. The figure summarizes reasoning under complete spatial information, reasoning under incomplete spatial information, and reasoning under safety-relevant information. In prompts for safety-relevant reasoning, red text indicates task-difficulty phrases and blue text indicates important contextual clues.</figcaption>
                 </figure>
               </div>
-              <p class="pub-abstract">High success rates on navigation tasks do not necessarily imply reliable decision making by foundation models. Across six diagnostic tasks in three settings, the study finds structural failures, hallucinated reasoning, constraint violations, and unsafe decisions, demonstrating the need for failure-focused evaluation beyond aggregate scores.</p>
-            </div>
-          </details>
-        </li>
-        <li>
-          <div class="pub-title">Dedicated Delivery Platform Based on the User Experience of the Visually Impaired</div>
-          <div class="pub-authors">Y. Kim, Y. Kim, Y. Shin, J. Lee, and <strong>S. Choi</strong>.</div>
-          <div class="pub-venue"><em>KIPS</em>, 2022, pp. 974-976.</div>
-          <div class="pub-summary">English summary: This paper proposes an accessibility-first delivery platform informed by user experience research with visually impaired users, focusing on practical usability in real delivery workflows.</div>
-          <div class="pub-links"><a href="data/BBlink_kor.pdf" target="_blank" rel="noopener">Original Korean Paper</a></div>
-          <details class="pub-details">
-            <summary>View abstract & figure</summary>
-            <div class="pub-detail-grid">
-              <div class="pub-fig-grid">
-                <div class="pub-figure-placeholder">Figure file not provided for this paper.</div>
-              </div>
-              <p class="pub-abstract">English summary: The paper designs a dedicated delivery platform based on UX analysis for visually impaired users. The core contribution is an accessibility-oriented interaction flow that reduces usability barriers in real service contexts.</p>
-            </div>
-          </details>
-        </li>
-        <li>
-          <div class="pub-title"><a href="https://arxiv.org/abs/2602.16149" target="_blank" rel="noopener">Evaluating Demographic Misrepresentation in Image-to-Image Portrait Editing</a></div>
-          <div class="pub-authors">H. Seo*, <strong>S. Choi*</strong>, M. Hong*, J. Kim, and J. Oh.</div>
-          <details class="pub-details">
-            <summary>View abstract & figure</summary>
-            <div class="pub-detail-grid">
-              <div class="pub-fig-grid">
-                <figure class="pub-figure-block">
-                  <img class="pub-figure" src="images/pubs/demomis/figure0.png" alt="Demographic misrepresentation qualitative figure">
-                  <figcaption class="pub-caption">Qualitative examples of demographic-conditioned failures in image-to-image editing across prompts and source demographics.</figcaption>
-                </figure>
-                <figure class="pub-figure-block">
-                  <img class="pub-figure" src="images/pubs/demomis/figure2.png" alt="Demographic misrepresentation pipeline figure">
-                  <figcaption class="pub-caption">Study overview: controlled benchmark from FairFace, three I2I editors, and evaluation of soft erasure, stereotype replacement, and feature-prompt mitigation with human and VLM-based assessment.</figcaption>
-                </figure>
-              </div>
-              <p class="pub-abstract">Demographic bias in text-to-image generation is well studied, but demographic-conditioned failures in instruction-guided image-to-image editing remain underexplored. This paper formalizes soft erasure and stereotype replacement, shows uneven identity preservation across demographics, and demonstrates that prompt-level identity constraints can reduce demographic drift without model retraining.</p>
+              <p class="pub-abstract">High success rates on navigation-related tasks do not necessarily translate into reliable decision making by foundation models. To examine this gap, we evaluate current models on six diagnostic tasks spanning three settings: reasoning under complete spatial information, reasoning under incomplete spatial information, and reasoning under safety-relevant information. Our results show that the current metrics may not capture critical limitations of the models and indicate good performance, underscoring the need for failure-focused analysis to understand model limitations and guide future progress. In a path-planning setting with unknown cells, GPT-5 achieved a high success rate of 93%; Yet, the failed cases exhibit fundamental limitations of the models, e.g., the lack of structural spatial understanding essential for navigation. We also find that newer models are not always more reliable than their predecessors on this end. In reasoning under safety-relevant information, Gemini-2.5 Flash achieved only 67% on the challenging emergency-evacuation task, underperforming Gemini-2.0 Flash, which reached 100% under the same condition. Across all evaluations, models exhibited structural collapse, hallucinated reasoning, constraint violations, and unsafe decisions. These findings show that foundation models still exhibit substantial failures in navigation-related decision making and require fine-grained evaluation before they can be trusted. Project page: https://cmubig.github.io/before-we-trust-them/</p>
             </div>
           </details>
         </li>
@@ -158,10 +124,10 @@
               <div class="pub-fig-grid">
                 <figure class="pub-figure-block">
                   <img class="pub-figure" src="images/pubs/cardiac/Figure_1.png" alt="CGQR-Net architecture figure">
-                  <figcaption class="pub-caption">Architecture of CGQR-Net: HRNet extracts multi-resolution features, contour-guided queries refine fused features through cross-attention, and dual heads produce segmentation and boundary outputs.</figcaption>
+                  <figcaption class="pub-caption">Architecture of the proposed CGQR-Net. HRNet extracts multi-resolution features from the input echocardiography image, and a coarse segmentation head provides an initial structural prediction. Contours extracted from the coarse mask are converted into query embeddings and used to refine fused multi-scale features through cross-attention. The refined representation is then passed to segmentation and boundary heads to produce the final boundary-aware multi-class segmentation.</figcaption>
                 </figure>
               </div>
-              <p class="pub-abstract">Accurate cardiac ultrasound segmentation is difficult under low contrast, speckle noise, irregular boundaries, and domain shifts. CGQR-Net integrates multi-resolution features with contour-derived structural priors for boundary-aware refinement, improving segmentation accuracy, boundary precision, and cross-dataset robustness.</p>
+              <p class="pub-abstract">Accurate cardiac ultrasound segmentation is critical for reliable assessment of ventricular function in intelligent healthcare systems. However, echocardiographic images are inherently challenging due to low contrast, speckle noise, irregular anatomical boundaries, and significant domain shift across acquisition devices and patient populations. To address these limitations, we propose a Contour-Guided Query Refinement Network (CGQR-Net) for boundary-aware segmentation. The framework integrates HRNet-based multi-resolution features with contour-derived query embeddings via cross-attention and jointly optimizes segmentation and boundary prediction.</p>
             </div>
           </details>
         </li>
@@ -175,14 +141,57 @@
               <div class="pub-fig-grid">
                 <figure class="pub-figure-block">
                   <img class="pub-figure" src="images/pubs/stablesketcher/teaser.png" alt="StableSketcher teaser figure">
-                  <figcaption class="pub-caption">Overview of StableSketcher and SketchDUO. StableSketcher improves prompt fidelity in sketch generation via a fine-tuned VAE and VQA-based reward feedback.</figcaption>
+                  <figcaption class="pub-caption">Overview of the StableSketcher framework and the SketchDUO dataset. StableSketcher generates sketch images from text prompts using Stable Diffusion with a fine-tuned VAE and improves prompt fidelity through VQA-based reward feedback. SketchDUO provides sketch images, captions, and QA sets.</figcaption>
                 </figure>
                 <figure class="pub-figure-block">
                   <img class="pub-figure" src="images/pubs/stablesketcher/data.png" alt="SketchDUO construction figure">
-                  <figcaption class="pub-caption">SketchDUO construction process from class selection and sketch collection to GPT-4o captioning, manual refinement, and TIFA-based QA creation.</figcaption>
+                  <figcaption class="pub-caption">SketchDUO construction process. The pipeline proceeds from left to right: class selection and sketch definition, positive sketch collection and negative sketch construction, and augmentation. In caption generation, GPT-4o produces template-constrained instance-level captions that are manually refined before TIFA-based QA pairs are constructed. The final SketchDUO dataset contains 35,851 sketch-caption pairs and 54,370 QA pairs.</figcaption>
                 </figure>
               </div>
-              <p class="pub-abstract">StableSketcher improves pixel-based hand-drawn sketch generation by fine-tuning the VAE for sketch-oriented latent decoding and introducing a VQA-based reinforcement signal for text-image alignment. The work also presents SketchDUO, a sketch-caption-QA dataset designed for instance-level training and evaluation.</p>
+              <p class="pub-abstract">Although recent advancements in diffusion models have significantly enriched image quality, synthesizing pixel-based human-drawn sketches remains challenging. We propose StableSketcher, a framework that improves prompt fidelity in sketch generation. It fine-tunes the variational autoencoder for sketch-oriented latent decoding and introduces a reinforcement-learning reward based on visual question answering to improve text-image alignment and semantic consistency. We also introduce SketchDUO, an instance-level sketch dataset paired with captions and QA signals.</p>
+            </div>
+          </details>
+        </li>
+        <li class="first-author pub-with-logo">
+          <img class="pub-logo" src="images/cmu-logo.png" alt="CMU logo">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2602.16149" target="_blank" rel="noopener">Evaluating Demographic Misrepresentation in Image-to-Image Portrait Editing</a> <span class="label-first">First Author</span></div>
+          <div class="pub-authors">H. Seo*, <strong>S. Choi*</strong>, M. Hong*, J. Kim, and J. Oh.</div>
+          <details class="pub-details">
+            <summary>View abstract & figure</summary>
+            <div class="pub-detail-grid">
+              <div class="pub-fig-grid">
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/demomis/figure0.png" alt="Demographic misrepresentation qualitative figure">
+                  <figcaption class="pub-caption">Qualitative examples of demographic-conditioned failures in I2I editing across different prompts and source demographics.</figcaption>
+                </figure>
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/demomis/figure2.png" alt="Demographic misrepresentation pipeline figure">
+                  <figcaption class="pub-caption">Overview of our study on demographic-conditioned failures in instruction-guided I2I portrait editing. We build a controlled benchmark from FairFace and pair source portraits with edit prompts. For each image-prompt pair, we run three I2I editing models to generate outputs. For diagnosing soft erasure and stereotype replacement, we evaluate iedit; for feature prompt mitigation, we add a feature prompt pfeat and re-run editing. Outputs are assessed via human evaluation and a VLM ensemble.</figcaption>
+                </figure>
+              </div>
+              <p class="pub-abstract">Demographic bias in text-to-image (T2I) generation is well studied, yet demographic-conditioned failures in instruction-guided image-to-image (I2I) editing remain underexplored. We examine whether identical edit instructions yield systematically different outcomes across subject demographics in open-weight I2I editors. We formalize two failure modes: Soft Erasure, where edits are silently weakened or ignored in the output image, and Stereotype Replacement, where edits introduce unrequested, stereotype-consistent attributes. We introduce a controlled benchmark that probes demographic-conditioned behavior by generating and editing portraits conditioned on race, gender, and age using a diagnostic prompt set, and evaluate multiple editors with vision-language model (VLM) scoring and human evaluation. Our analysis shows that identity preservation failures are pervasive, demographically uneven, and shaped by implicit social priors, including occupation-driven gender inference. Finally, we demonstrate that a prompt-level identity constraint, without model updates, can substantially reduce demographic change for minority groups while leaving majority-group portraits largely unchanged, revealing asymmetric identity priors in current editors. Together, our findings establish identity preservation as a central and demographically uneven failure mode in I2I editing and motivate demographic-robust editing systems. Project page: this https URL</p>
+            </div>
+          </details>
+        </li>
+        <li>
+          <div class="pub-title">Dedicated Delivery Platform Based on the User Experience of the Visually Impaired</div>
+          <div class="pub-authors">Y. Kim, Y. Kim, Y. Shin, J. Lee, and <strong>S. Choi</strong>.</div>
+          <div class="pub-venue"><em>KIPS</em>, 2022, pp. 974-976.</div>
+          <div class="pub-summary">English summary: This paper proposes an accessibility-first delivery platform informed by user experience research with visually impaired users, focusing on practical usability in real delivery workflows.</div>
+          <div class="pub-links">
+            <a href="data/BBlink_kor.pdf" target="_blank" rel="noopener">Original Korean Paper</a> /
+            <a href="data/BBlink_eng.pdf" target="_blank" rel="noopener">Translated Version</a>
+          </div>
+          <details class="pub-details">
+            <summary>View abstract & figure</summary>
+            <div class="pub-detail-grid">
+              <div class="pub-fig-grid">
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/delivery/table.png" alt="BBlink interview findings table">
+                  <figcaption class="pub-caption">Key interview findings and corresponding design implications.</figcaption>
+                </figure>
+              </div>
+              <p class="pub-abstract">As the online food-delivery market expanded rapidly after the COVID-19 pandemic, mobile ordering platforms became mainstream. However, existing delivery-service interfaces were largely designed from the perspective of non-disabled users. Interviews with visually impaired users showed that current application complexity causes substantial time and effort during routine ordering tasks. To address this problem, this paper presents BBlink, a user-experience-centered delivery platform designed for visually impaired users, with a simplified service flow, customized interface modes, and enhanced accessibility.</p>
             </div>
           </details>
         </li>
@@ -191,7 +200,8 @@
 
     <section class="section" id="projects">
       <h2>Projects</h2>
-      <div class="project-card">
+      <div class="project-card project-with-logo">
+        <img class="project-logo" src="images/cmu-logo.png" alt="CMU logo">
         <h3>VLM-guided Collaborative Robotic Cinematography</h3>
         <p class="project-meta">Oct 2025 to Jan 2026</p>
         <p>Designed a VLM-driven, director-in-the-loop workflow for stop-motion filmmaking using a robot arm (xArm 6).</p>
@@ -211,7 +221,8 @@
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card project-with-logo">
+        <img class="project-logo project-logo-large" src="images/purdue-logo.png" alt="Purdue logo">
         <h3>IoT Farm Firefighting System using Simplified Data Transmission with UAV and LoRa</h3>
         <p class="project-meta">Purdue University Visiting Scholar Project, Oct 2021 to Dec 2021</p>
         <p>Designed a UAV and LoRa-based IoT firefighting system for farm environments, focusing on lightweight data transmission and robust remote monitoring.</p>

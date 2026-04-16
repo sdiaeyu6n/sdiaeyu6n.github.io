@@ -142,6 +142,20 @@ p {
   margin-bottom: 1rem;
 }
 
+.pub-with-logo {
+  position: relative;
+  padding-right: 64px;
+}
+
+.pub-logo {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.2rem;
+  width: 46px;
+  height: auto;
+  opacity: 0.95;
+}
+
 .pub-title {
   font-weight: 650;
   line-height: 1.45;
@@ -259,11 +273,28 @@ p {
 }
 
 .project-card {
+  position: relative;
   padding: 0.85rem 0.95rem;
   margin-bottom: 0.75rem;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fcfdff;
+}
+
+.project-with-logo {
+  padding-top: 1.2rem;
+}
+
+.project-logo {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.7rem;
+  width: 54px;
+  height: auto;
+}
+
+.project-logo-large {
+  width: 70px;
 }
 
 .project-image {
@@ -303,5 +334,27 @@ a {
 
   .pub-fig-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pub-with-logo {
+    padding-right: 0;
+  }
+
+  .pub-logo {
+    position: static;
+    width: 42px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .project-logo,
+  .project-logo-large {
+    position: static;
+    width: 60px;
+    margin-bottom: 0.35rem;
+  }
+
+  .project-with-logo {
+    padding-top: 0.85rem;
   }
 }
