@@ -159,7 +159,6 @@ p {
   border-radius: 10px;
 }
 
-.section-note,
 .project-meta {
   color: var(--muted);
   font-size: 0.94rem;
@@ -220,19 +219,13 @@ p {
 
 .pub-list {
   margin: 0.7rem 0 0;
-  padding-left: 1.2rem;
+  padding-left: 0;
+  list-style: none;
 }
 
 .pub-list li {
   margin-bottom: 1rem;
   scroll-margin-top: 1rem;
-}
-
-.pub-list li:target {
-  outline: 2px solid #bfd4e7;
-  border-radius: 6px;
-  background: #f8fbff;
-  padding: 0.35rem 0.5rem 0.45rem;
 }
 
 .pub-with-logo {
@@ -370,12 +363,12 @@ p {
   position: absolute;
   top: 0.45rem;
   right: 0.7rem;
-  width: 68px;
+  width: 58px;
   height: auto;
 }
 
 .project-logo-large {
-  width: 84px;
+  width: 62px;
 }
 
 .project-image {
@@ -437,10 +430,8 @@ p {
   font-size: 0.9rem;
 }
 
-.experience-note {
-  margin: 0.4rem 0 0;
-  font-size: 0.9rem;
-  color: #374151;
+.experience-meta span {
+  display: block;
 }
 
 .split-grid {
@@ -508,7 +499,7 @@ a {
   .project-logo,
   .project-logo-large {
     position: static;
-    width: 74px;
+    width: 58px;
     margin-bottom: 0.35rem;
   }
 

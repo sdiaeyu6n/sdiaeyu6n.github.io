@@ -44,21 +44,20 @@
     <section class="section" id="news">
       <h2>News</h2>
       <ul class="news-list">
-        <li><span class="news-date">2026</span><span><a href="#pub-sea">SEA accepted to CVPR 2026.</a></span></li>
-        <li><span class="news-date">2026</span><span><a href="#pub-before-we-trust-them">Before We Trust Them accepted to AAAI 2026 Summer Symposium Series.</a></span></li>
-        <li><span class="news-date">2026</span><span><a href="#pub-exposing-blindspots">Exposing Blindspots accepted to IASEAI 2026 Main Conference.</a></span></li>
-        <li><span class="news-date">2025-2026</span><span>Fully funded by the Korean government and Dongguk University, completed a 6-month visiting researcher term at the Carnegie Mellon University Robotics Institute (BIG Lab).</span></li>
-        <li><span class="news-date">2025</span><span>Following the Minister's Award at ICT Challenge 2024, attended CES 2025 with full support from ITRC.</span></li>
-        <li class="news-extra is-hidden"><span class="news-date">2024</span><span>Started M.S./Ph.D. program in the Machine Learning Lab at Dongguk University.</span></li>
-        <li class="news-extra is-hidden"><span class="news-date">2023-2024</span><span>Received approximately USD 20,000 in Korean government funding and worked for one year as an intern at Cipherome, Inc. in San Jose, CA.</span></li>
+        <li><span class="news-date">2026</span><span><a href="#pub-sea">SEA</a> was accepted to CVPR 2026.</span></li>
+        <li><span class="news-date">2026</span><span><a href="#pub-before-we-trust-them">Before We Trust Them</a> was accepted to AAAI 2026 Summer Symposium Series.</span></li>
+        <li><span class="news-date">2026</span><span><a href="#pub-exposing-blindspots">Exposing Blindspots</a> was accepted to IASEAI 2026 Main Conference.</span></li>
+        <li><span class="news-date">2025-2026</span><span>Completed a 6-month visiting researcher term at Carnegie Mellon University Robotics Institute (BIG Lab), fully funded by the Korean Government and Dongguk University.</span></li>
+        <li><span class="news-date">2025</span><span>Attended CES 2025 with full support from ITRC as a benefit of the ICT Challenge 2024 Minister's Award.</span></li>
+        <li class="news-extra is-hidden"><span class="news-date">2024</span><span>Started the M.S./Ph.D. program in the Machine Learning Lab at Dongguk University.</span></li>
+        <li class="news-extra is-hidden"><span class="news-date">2023-2024</span><span>Worked as an intern at Cipherome, Inc. (San Jose, CA) with about USD 20,000 in Korean Government funding.</span></li>
       </ul>
       <button type="button" class="news-toggle-button" id="news-toggle-btn" aria-expanded="false">Show More</button>
     </section>
 
     <section class="section" id="publications">
       <h2>Publications</h2>
-      <p class="section-note">Published and accepted papers.</p>
-      <ol class="pub-list">
+      <ul class="pub-list">
         <li id="pub-sea">
           <div class="pub-title">SEA: Evaluating Sketch Abstraction Efficiency via Element-level Commonsense Visual Question Answering</div>
           <div class="pub-authors">J. Park, <strong>S. Choi</strong>, J. Seo, M. Sohn, Y. Kim, and J. Kim.</div>
@@ -123,7 +122,7 @@
                   <figcaption class="pub-caption">Figure 2: Overall framework overview. (a) Schema inputs: six countries, eight categories, and three era-aware prompts. (b) Experimental pipeline: T2I base generation and three I2I editing studies. (c) Multi-layered evaluation: integrating automatic, culture-aware metrics, and human evaluation.</figcaption>
                 </figure>
               </div>
-              <p class="pub-abstract">Generative image models produce striking visuals yet often misrepresent culture. Prior work has examined cultural bias mainly in text-to-image (T2I) systems, leaving image-to-image (I2I) editors underexplored. We bridge this gap with a unified evaluation across six countries, an 8-category/36-subcategory schema, and era-aware prompts, auditing both T2I generation and I2I editing under a standardized protocol that yields comparable diagnostics. Using open models with fixed settings, we derive cross-country, cross-era, and cross-category evaluations. Our framework combines standard automatic metrics, a culture-aware retrieval-augmented VQA, and expert human judgments collected from native reviewers. To enable reproducibility, we release the complete image corpus, prompts, and configurations. Our study reveals three findings: (1) under country-agnostic prompts, models default to Global-North, modern-leaning depictions that flatten cross-country distinctions; (2) iterative I2I editing erodes cultural fidelity even when conventional metrics remain flat or improve; and (3) I2I models apply superficial cues (palette shifts, generic props) rather than era-consistent, context-aware changes, often retaining source identity for Global-South targets. These results highlight that culture-sensitive edits remain unreliable in current systems. Project page: https://seochan99.github.io/ECB</p>
+              <p class="pub-abstract">Generative image models produce striking visuals yet often misrepresent culture. Prior work has examined cultural bias mainly in text-to-image (T2I) systems, leaving image-to-image (I2I) editors underexplored. We bridge this gap with a unified evaluation across six countries, an 8-category/36-subcategory schema, and era-aware prompts, auditing both T2I generation and I2I editing under a standardized protocol that yields comparable diagnostics. Using open models with fixed settings, we derive cross-country, cross-era, and cross-category evaluations. Our framework combines standard automatic metrics, a culture-aware retrieval-augmented VQA, and expert human judgments collected from native reviewers. To enable reproducibility, we release the complete image corpus, prompts, and configurations. Our study reveals three findings: (1) under country-agnostic prompts, models default to Global-North, modern-leaning depictions that flatten cross-country distinctions; (2) iterative I2I editing erodes cultural fidelity even when conventional metrics remain flat or improve; and (3) I2I models apply superficial cues (palette shifts, generic props) rather than era-consistent, context-aware changes, often retaining source identity for Global-South targets. These results highlight that culture-sensitive edits remain unreliable in current systems. By releasing standardized data, prompts, and human evaluation protocols, we provide a reproducible, culture-centered benchmark for diagnosing and tracking cultural bias in generative image models.</p>
             </div>
           </details>
         </li>
@@ -146,7 +145,7 @@
                   <figcaption class="pub-caption">Overview of the three evaluation settings and representative input formats used in our evaluation. The figure summarizes reasoning under complete spatial information, reasoning under incomplete spatial information, and reasoning under safety-relevant information. In prompts for safety-relevant reasoning, red text indicates task-difficulty phrases and blue text indicates important contextual clues.</figcaption>
                 </figure>
               </div>
-              <p class="pub-abstract">High success rates on navigation-related tasks do not necessarily translate into reliable decision making by foundation models. To examine this gap, we evaluate current models on six diagnostic tasks spanning three settings: reasoning under complete spatial information, reasoning under incomplete spatial information, and reasoning under safety-relevant information. Our results show that the current metrics may not capture critical limitations of the models and indicate good performance, underscoring the need for failure-focused analysis to understand model limitations and guide future progress. In a path-planning setting with unknown cells, GPT-5 achieved a high success rate of 93%; Yet, the failed cases exhibit fundamental limitations of the models, e.g., the lack of structural spatial understanding essential for navigation. We also find that newer models are not always more reliable than their predecessors on this end. In reasoning under safety-relevant information, Gemini-2.5 Flash achieved only 67% on the challenging emergency-evacuation task, underperforming Gemini-2.0 Flash, which reached 100% under the same condition. Across all evaluations, models exhibited structural collapse, hallucinated reasoning, constraint violations, and unsafe decisions. These findings show that foundation models still exhibit substantial failures in navigation-related decision making and require fine-grained evaluation before they can be trusted. Project page: https://cmubig.github.io/before-we-trust-them/</p>
+              <p class="pub-abstract">High success rates on navigation-related tasks do not necessarily translate into reliable decision making by foundation models. To examine this gap, we evaluate current models on six diagnostic tasks spanning three settings: reasoning under complete spatial information, reasoning under incomplete spatial information, and reasoning under safety-relevant information. Our results show that the current metrics may not capture critical limitations of the models and indicate good performance, underscoring the need for failure-focused analysis to understand model limitations and guide future progress. In a path-planning setting with unknown cells, GPT-5 achieved a high success rate of 93%; Yet, the failed cases exhibit fundamental limitations of the models, e.g., the lack of structural spatial understanding essential for navigation. We also find that newer models are not always more reliable than their predecessors on this end. In reasoning under safety-relevant information, Gemini-2.5 Flash achieved only 67% on the challenging emergency-evacuation task, underperforming Gemini-2.0 Flash, which reached 100% under the same condition. Across all evaluations, models exhibited structural collapse, hallucinated reasoning, constraint violations, and unsafe decisions. These findings show that foundation models still exhibit substantial failures in navigation-related decision making and require fine-grained evaluation before they can be trusted.</p>
             </div>
           </details>
         </li>
@@ -173,12 +172,12 @@
             </div>
           </details>
         </li>
-      </ol>
+      </ul>
     </section>
 
     <section class="section" id="preprints">
       <h2>Preprints</h2>
-      <ol class="pub-list">
+      <ul class="pub-list">
         <li class="first-author pub-with-logo" id="pub-demomis">
           <img class="pub-logo" src="images/cmu-lettermark-r.png" alt="CMU logo">
           <div class="pub-title">Evaluating Demographic Misrepresentation in Image-to-Image Portrait Editing <span class="label-first">First Author</span></div>
@@ -200,7 +199,7 @@
                   <figcaption class="pub-caption">Overview of our study on demographic-conditioned failures in instruction-guided I2I portrait editing. We build a controlled benchmark from FairFace and pair source portraits with edit prompts. For each image-prompt pair, we run three I2I editing models to generate outputs. For diagnosing soft erasure and stereotype replacement, we evaluate iedit; for feature prompt mitigation, we add a feature prompt pfeat and re-run editing. Outputs are assessed via human evaluation and a VLM ensemble.</figcaption>
                 </figure>
               </div>
-              <p class="pub-abstract">Demographic bias in text-to-image (T2I) generation is well studied, yet demographic-conditioned failures in instruction-guided image-to-image (I2I) editing remain underexplored. We examine whether identical edit instructions yield systematically different outcomes across subject demographics in open-weight I2I editors. We formalize two failure modes: Soft Erasure, where edits are silently weakened or ignored in the output image, and Stereotype Replacement, where edits introduce unrequested, stereotype-consistent attributes. We introduce a controlled benchmark that probes demographic-conditioned behavior by generating and editing portraits conditioned on race, gender, and age using a diagnostic prompt set, and evaluate multiple editors with vision-language model (VLM) scoring and human evaluation. Our analysis shows that identity preservation failures are pervasive, demographically uneven, and shaped by implicit social priors, including occupation-driven gender inference. Finally, we demonstrate that a prompt-level identity constraint, without model updates, can substantially reduce demographic change for minority groups while leaving majority-group portraits largely unchanged, revealing asymmetric identity priors in current editors. Together, our findings establish identity preservation as a central and demographically uneven failure mode in I2I editing and motivate demographic-robust editing systems. Project page: this https URL</p>
+              <p class="pub-abstract">Demographic bias in text-to-image (T2I) generation is well studied, yet demographic-conditioned failures in instruction-guided image-to-image (I2I) editing remain underexplored. We examine whether identical edit instructions yield systematically different outcomes across subject demographics in open-weight I2I editors. We formalize two failure modes: Soft Erasure, where edits are silently weakened or ignored in the output image, and Stereotype Replacement, where edits introduce unrequested, stereotype-consistent attributes. We introduce a controlled benchmark that probes demographic-conditioned behavior by generating and editing portraits conditioned on race, gender, and age using a diagnostic prompt set, and evaluate multiple editors with vision-language model (VLM) scoring and human evaluation. Our analysis shows that identity preservation failures are pervasive, demographically uneven, and shaped by implicit social priors, including occupation-driven gender inference. Finally, we demonstrate that a prompt-level identity constraint, without model updates, can substantially reduce demographic change for minority groups while leaving majority-group portraits largely unchanged, revealing asymmetric identity priors in current editors. Together, our findings establish identity preservation as a central and demographically uneven failure mode in I2I editing and motivate demographic-robust editing systems.</p>
             </div>
           </details>
         </li>
@@ -248,11 +247,11 @@
                   <figcaption class="pub-caption">SketchDUO construction process. The pipeline proceeds from left to right: class selection and sketch definition, positive sketch collection and negative sketch construction, and augmentation. In caption generation, GPT-4o produces template-constrained instance-level captions that are manually refined before TIFA-based QA pairs are constructed. The final SketchDUO dataset contains 35,851 sketch-caption pairs and 54,370 QA pairs.</figcaption>
                 </figure>
               </div>
-              <p class="pub-abstract">Although recent advancements in diffusion models have significantly enriched the quality of generated images, challenges remain in synthesizing pixel-based human-drawn sketches, a representative example of abstract expression. To combat these challenges, we propose StableSketcher, a novel framework that empowers diffusion models to generate hand-drawn sketches with high prompt fidelity. Within this framework, we fine-tune the variational autoencoder to optimize latent decoding and integrate a reward function for reinforcement learning based on visual question answering. Project page: https://zihos.github.io/StableSketcher</p>
+              <p class="pub-abstract">Although recent advancements in diffusion models have significantly enriched the quality of generated images, challenges remain in synthesizing pixel-based human-drawn sketches, a representative example of abstract expression. To combat these challenges, we propose StableSketcher, a novel framework that empowers diffusion models to generate hand-drawn sketches with high prompt fidelity. Within this framework, we fine-tune the variational autoencoder to optimize latent decoding, enabling it to better capture the characteristics of sketches. In parallel, we integrate a new reward function for reinforcement learning based on visual question answering, which improves text-image alignment and semantic consistency. Extensive experiments demonstrate that StableSketcher generates sketches with improved stylistic fidelity, achieving better alignment with prompts compared to the Stable Diffusion baseline. Additionally, we introduce SketchDUO, to the best of our knowledge, the first dataset comprising instance-level sketches paired with captions and question-answer pairs, thereby addressing the limitations of existing datasets that rely on image-label pairs.</p>
             </div>
           </details>
         </li>
-      </ol>
+      </ul>
     </section>
 
     <section class="section" id="projects">
@@ -261,7 +260,7 @@
       <div class="project-card project-with-logo">
         <img class="project-logo" src="images/cmu-lettermark-r.png" alt="CMU logo">
         <h3>VLM-guided Collaborative Robotic Cinematography</h3>
-        <p class="project-meta">Oct 2025 to Jan 2026</p>
+        <p class="project-meta">Oct 2025 - Jan 2026</p>
         <p>Designed a VLM-driven, director-in-the-loop workflow for stop-motion filmmaking using a robot arm (xArm 6).</p>
         <img class="project-image" src="images/colors.jpg" alt="Stagehand robot collaborative cinematography visual">
         <div class="project-links">
@@ -272,7 +271,7 @@
 
       <div class="project-card">
         <h3>Mobile Data Loss Prevention System for Real-Time Personal Data Monitoring</h3>
-        <p class="project-meta">Undergraduate Capstone Design, Aug 2022 to Dec 2022</p>
+        <p class="project-meta">Undergraduate Capstone Design, Aug 2022 - Dec 2022</p>
         <p>Developed an Android app to monitor real-time network traffic and detect potential personal data leakage through schema design and regex-based matching.</p>
         <div class="project-links">
           <a class="button button-muted" href="#" aria-disabled="true">Project Material (Coming Soon)</a>
@@ -282,7 +281,7 @@
       <div class="project-card project-with-logo">
         <img class="project-logo project-logo-large" src="images/purdue-logo.png" alt="Purdue logo">
         <h3>IoT Farm Firefighting System using Simplified Data Transmission with UAV and LoRa</h3>
-        <p class="project-meta">Purdue University Visiting Scholar Project, Oct 2021 to Dec 2021</p>
+        <p class="project-meta">Purdue University Visiting Scholar Project, Oct 2021 - Dec 2021</p>
         <p>Designed a UAV and LoRa-based IoT firefighting system for farm environments, focusing on lightweight data transmission and robust remote monitoring.</p>
         <div class="project-links">
           <a class="button" href="data/Purdue.pdf" target="_blank" rel="noopener">View Project Material</a>
@@ -294,39 +293,38 @@
       <h2>Research & Working Experience</h2>
       <div class="experience-grid">
         <article class="experience-card">
-          <img class="experience-brand-logo" src="images/cmu-logo.png" alt="Carnegie Mellon University logo">
+          <img class="experience-brand-logo" src="images/cmu-logo.svg" alt="Carnegie Mellon University logo">
           <h3>Visiting Research Scholar</h3>
           <p class="experience-org">Bot Intelligence Group, Carnegie Mellon University</p>
-          <p class="experience-meta">Pittsburgh, PA, USA | Aug 2025 - Feb 2026</p>
+          <p class="experience-meta"><span>Pittsburgh, PA, USA</span><span>Aug 2025 - Feb 2026</span></p>
         </article>
 
         <article class="experience-card">
           <img class="experience-brand-logo" src="images/dgu-logo.png" alt="Dongguk University logo">
           <h3>M.S./Ph.D. Researcher</h3>
           <p class="experience-org">Machine Learning Lab, Dongguk University</p>
-          <p class="experience-meta">Seoul, South Korea | Mar 2024 - Present</p>
+          <p class="experience-meta"><span>Seoul, South Korea</span><span>Mar 2024 - Present</span></p>
         </article>
 
         <article class="experience-card">
           <img class="experience-brand-logo" src="images/dgu-logo.png" alt="Dongguk University logo">
           <h3>Undergraduate Researcher</h3>
           <p class="experience-org">AI Lab, Dongguk University</p>
-          <p class="experience-meta">Seoul, South Korea | Feb 2022 - Dec 2022</p>
+          <p class="experience-meta"><span>Seoul, South Korea</span><span>Feb 2022 - Dec 2022</span></p>
         </article>
 
         <article class="experience-card">
           <img class="experience-brand-logo" src="images/PU-H-Full-RGB.png" alt="Purdue University logo">
           <h3>Visiting Scholar</h3>
           <p class="experience-org">M2M Lab, Purdue University</p>
-          <p class="experience-meta">West Lafayette, IN, USA | Oct 2021 - Dec 2021</p>
+          <p class="experience-meta"><span>West Lafayette, IN, USA</span><span>Oct 2021 - Dec 2021</span></p>
         </article>
 
         <article class="experience-card">
           <img class="experience-brand-logo" src="images/cipherome.png" alt="Cipherome logo">
           <h3>Intern</h3>
-          <p class="experience-org">Cipherome Inc., Technology Team</p>
-          <p class="experience-meta">Seoul, South Korea | Mar 2023 - Feb 2024</p>
-          <p class="experience-note">Data analysis and product engineering.</p>
+          <p class="experience-org"><a href="https://www.cipherome.com/" target="_blank" rel="noopener">Cipherome Inc.</a>, Technology Team</p>
+          <p class="experience-meta"><span>San Jose, CA, USA</span><span>Mar 2023 - Feb 2024</span></p>
         </article>
       </div>
     </section>
