@@ -28,7 +28,7 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
+  grid-template-columns: minmax(0, 1fr) 252px;
   gap: 1.5rem;
   align-items: center;
   padding: 1.4rem;
@@ -69,27 +69,31 @@ p {
 .interests {
   display: flex;
   flex-wrap: nowrap;
-  gap: 0.42rem;
+  gap: 0.36rem;
   margin: 0.9rem 0;
 }
 
 .interests span {
-  padding: 0.2rem 0.5rem;
+  padding: 0.16rem 0.42rem;
   border-radius: 999px;
   background: var(--tag-bg);
   color: var(--primary-strong);
-  font-size: 0.8rem;
+  font-size: 0.74rem;
+  font-weight: 700;
   white-space: nowrap;
 }
 
 .profile-wrap {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.65rem;
 }
 
 .profile-photo {
-  width: 260px;
-  height: 260px;
+  width: 228px;
+  height: 228px;
   object-fit: cover;
   border-radius: 14px;
   border: 1px solid var(--line);
@@ -103,8 +107,19 @@ p {
   margin-top: 0.9rem;
 }
 
+.hero-links {
+  margin-top: 0;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.hero-links .button {
+  padding: 0.3rem 0.56rem;
+  font-size: 0.82rem;
+}
+
 .email-inline {
-  margin: 0.75rem 0 0;
+  margin: 0;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -568,4 +583,5 @@ a {
   .interests span {
     padding: 0.25rem 0.65rem;
     font-size: 0.86rem;
+    font-weight: 600;
   }
