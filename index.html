@@ -30,6 +30,11 @@
           <a class="button" href="https://www.linkedin.com/in/sieunchoi/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="button" href="mailto:sieunchoi@dgu.ac.kr">Email</a>
         </div>
+        <p class="email-inline">
+          <span id="email-text">sieunchoi@dgu.ac.kr</span>
+          <button type="button" class="copy-button" id="copy-email-btn" aria-label="Copy email address">Copy</button>
+          <span class="copy-status" id="copy-email-status" aria-live="polite"></span>
+        </p>
       </div>
       <div class="profile-wrap">
         <img class="profile-photo" src="images/image.jpg" alt="Portrait of Sieun Choi">
@@ -39,11 +44,13 @@
     <section class="section" id="news">
       <h2>News</h2>
       <ul class="news-list">
-        <li><span class="news-date">2026</span><span>"SEA" accepted to CVPR 2026.</span></li>
-        <li><span class="news-date">2026</span><span>"Exposing Blindspots" accepted to IASEAI 2026 Main Conference.</span></li>
-        <li><span class="news-date">2026</span><span>"Before We Trust Them" accepted to AAAI 2026 Summer Symposium Series.</span></li>
-        <li><span class="news-date">2026</span><span>Served as Teaching Assistant for Introduction to Programming and Convergence Capstone Design.</span></li>
-        <li><span class="news-date">2025-2026</span><span>Visiting Research Scholar, Bot Intelligence Group, Carnegie Mellon University.</span></li>
+        <li><span class="news-date">2026</span><span><a href="#pub-sea">SEA accepted to CVPR 2026.</a></span></li>
+        <li><span class="news-date">2026</span><span><a href="#pub-before-we-trust-them">Before We Trust Them accepted to AAAI 2026 Summer Symposium Series.</a></span></li>
+        <li><span class="news-date">2026</span><span><a href="#pub-exposing-blindspots">Exposing Blindspots accepted to IASEAI 2026 Main Conference.</a></span></li>
+        <li><span class="news-date">2025-2026</span><span>Fully funded by the Korean government and Dongguk University, completed a 6-month visiting researcher term at the Carnegie Mellon University Robotics Institute (BIG Lab).</span></li>
+        <li><span class="news-date">2025</span><span>Following the Minister's Award at ICT Challenge 2024, attended CES 2025 with full support from ITRC.</span></li>
+        <li><span class="news-date">2024</span><span>Started M.S./Ph.D. program in the Machine Learning Lab at Dongguk University.</span></li>
+        <li><span class="news-date">2023-2024</span><span>Received approximately USD 20,000 in Korean government funding and worked for one year as an intern at Cipherome, Inc. in San Jose, CA.</span></li>
       </ul>
     </section>
 
@@ -51,10 +58,13 @@
       <h2>Publications</h2>
       <p class="section-note">Published and accepted papers.</p>
       <ol class="pub-list">
-        <li>
-          <div class="pub-title"><a href="https://arxiv.org/abs/2603.28363" target="_blank" rel="noopener">SEA: Evaluating Sketch Abstraction Efficiency via Element-level Commonsense Visual Question Answering</a></div>
+        <li id="pub-sea">
+          <div class="pub-title">SEA: Evaluating Sketch Abstraction Efficiency via Element-level Commonsense Visual Question Answering</div>
           <div class="pub-authors">J. Park, <strong>S. Choi</strong>, J. Seo, M. Sohn, Y. Kim, and J. Kim.</div>
           <div class="pub-venue"><em>CVPR 2026</em> (Accepted).</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2603.28363" target="_blank" rel="noopener">Paper</a>
+          </div>
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
@@ -73,10 +83,13 @@
           </details>
         </li>
 
-        <li>
-          <div class="pub-title"><a href="https://www.nature.com/articles/s41598-026-45014-1" target="_blank" rel="noopener">Machine Learning Prediction of Common Bile Duct Stones Using Synthetic Data to Guide Emergency ERCP Decisions</a></div>
+        <li id="pub-ercp">
+          <div class="pub-title">Machine Learning Prediction of Common Bile Duct Stones Using Synthetic Data to Guide Emergency ERCP Decisions</div>
           <div class="pub-authors">S. Kang*, N. Park*, I. S. Shin*, E. Lee, <strong>S. Choi</strong>, J. Jung, J. K. Lee, Y. N. Lee, J. H. Moon, K. R. Joo, J. S. Kim, and J. Kim.</div>
           <div class="pub-venue"><em>Scientific Reports</em>, 2026.</div>
+          <div class="pub-links">
+            <a href="https://www.nature.com/articles/s41598-026-45014-1" target="_blank" rel="noopener">Paper</a>
+          </div>
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
@@ -91,11 +104,15 @@
           </details>
         </li>
 
-        <li class="first-author pub-with-logo">
+        <li class="first-author pub-with-logo" id="pub-exposing-blindspots">
           <img class="pub-logo" src="images/cmu-lettermark-r.png" alt="CMU logo">
-          <div class="pub-title"><a href="https://arxiv.org/abs/2510.20042" target="_blank" rel="noopener">Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models</a> <span class="label-first">First Author</span></div>
+          <div class="pub-title">Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models <span class="label-first">First Author</span></div>
           <div class="pub-authors">H. Seo*, <strong>S. Choi*</strong>, M. Hong*, Y. Zhou, J. Kim, L. Ismaila, N. Etori, M. Agarwal, Z. Liu, J. Kim, and J. Oh.</div>
           <div class="pub-venue"><em>IASEAI 2026 Main Conference</em> (Accepted).</div>
+          <div class="pub-links">
+            <a href="https://seochan99.github.io/ECB/" target="_blank" rel="noopener">Project Page</a> /
+            <a href="https://arxiv.org/abs/2510.20042" target="_blank" rel="noopener">Paper</a>
+          </div>
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
@@ -110,11 +127,15 @@
           </details>
         </li>
 
-        <li class="pub-with-logo">
+        <li class="pub-with-logo" id="pub-before-we-trust-them">
           <img class="pub-logo" src="images/cmu-lettermark-r.png" alt="CMU logo">
-          <div class="pub-title"><a href="https://arxiv.org/abs/2601.05529" target="_blank" rel="noopener">Before We Trust Them: Decision-Making Failures in Navigation of Foundation Models</a></div>
+          <div class="pub-title">Before We Trust Them: Decision-Making Failures in Navigation of Foundation Models</div>
           <div class="pub-authors">J. Han*, J. Seo*, J. Min*, <strong>S. Choi</strong>, H. Seo, J. Kim, and J. Oh.</div>
           <div class="pub-venue"><em>AAAI 2026 Summer Symposium Series</em> (Accepted).</div>
+          <div class="pub-links">
+            <a href="https://cmubig.github.io/before-we-trust-them/" target="_blank" rel="noopener">Project Page</a> /
+            <a href="https://arxiv.org/abs/2601.05529" target="_blank" rel="noopener">Paper</a>
+          </div>
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
@@ -129,7 +150,7 @@
           </details>
         </li>
 
-        <li>
+        <li id="pub-delivery">
           <div class="pub-title">Dedicated Delivery Platform Based on the User Experience of the Visually Impaired</div>
           <div class="pub-authors">Y. Kim, Y. Kim, Y. Shin, J. Lee, and <strong>S. Choi</strong>.</div>
           <div class="pub-venue"><em>KIPS</em>, 2022, pp. 974-976.</div>
@@ -157,10 +178,14 @@
     <section class="section" id="preprints">
       <h2>Preprints</h2>
       <ol class="pub-list">
-        <li class="first-author pub-with-logo">
+        <li class="first-author pub-with-logo" id="pub-demomis">
           <img class="pub-logo" src="images/cmu-lettermark-r.png" alt="CMU logo">
-          <div class="pub-title"><a href="https://arxiv.org/abs/2602.16149" target="_blank" rel="noopener">Evaluating Demographic Misrepresentation in Image-to-Image Portrait Editing</a> <span class="label-first">First Author</span></div>
+          <div class="pub-title">Evaluating Demographic Misrepresentation in Image-to-Image Portrait Editing <span class="label-first">First Author</span></div>
           <div class="pub-authors">H. Seo*, <strong>S. Choi*</strong>, M. Hong*, J. Kim, and J. Oh.</div>
+          <div class="pub-links">
+            <a href="https://seochan99.github.io/i2i-demographic-bias/" target="_blank" rel="noopener">Project Page</a> /
+            <a href="https://arxiv.org/abs/2602.16149" target="_blank" rel="noopener">Paper</a>
+          </div>
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
@@ -179,10 +204,13 @@
           </details>
         </li>
 
-        <li>
-          <div class="pub-title"><a href="https://arxiv.org/abs/2603.28110" target="_blank" rel="noopener">Contour-Guided Query-Based Feature Fusion for Boundary-Aware and Generalizable Cardiac Ultrasound Segmentation</a></div>
+        <li id="pub-cardiac">
+          <div class="pub-title">Contour-Guided Query-Based Feature Fusion for Boundary-Aware and Generalizable Cardiac Ultrasound Segmentation</div>
           <div class="pub-authors">Z. Ullah, <strong>S. Choi</strong>, and J. Kim.</div>
           <div class="pub-venue"><em>arXiv preprint</em>, 2026 (Under Review).</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2603.28110" target="_blank" rel="noopener">Paper</a>
+          </div>
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
@@ -197,10 +225,15 @@
           </details>
         </li>
 
-        <li>
+        <li id="pub-stablesketcher">
           <div class="pub-title">StableSketcher: Enhancing Diffusion Model for Pixel-based Sketch Generation via Visual Question Answering Feedback</div>
           <div class="pub-authors">J. Park, <strong>S. Choi</strong>, J. Seo, and J. Kim.</div>
           <div class="pub-venue"><em>arXiv preprint</em>, 2025 (Under Review).</div>
+          <div class="pub-links">
+            <a href="https://zihos.github.io/StableSketcher/" target="_blank" rel="noopener">Project Page</a> /
+            <a href="https://arxiv.org/abs/2508.10883" target="_blank" rel="noopener">Paper</a> /
+            <a href="https://huggingface.co/datasets/ziiio/SketchDUO" target="_blank" rel="noopener">Dataset</a>
+          </div>
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
@@ -374,5 +407,22 @@
       <p>LinkedIn: <a href="https://www.linkedin.com/in/sieunchoi/" target="_blank" rel="noopener">sieunchoi</a></p>
     </section>
   </main>
+  <script>
+    (function () {
+      var copyBtn = document.getElementById("copy-email-btn");
+      var emailText = document.getElementById("email-text");
+      var status = document.getElementById("copy-email-status");
+      if (!copyBtn || !emailText || !status) return;
+      copyBtn.addEventListener("click", function () {
+        var email = emailText.textContent.trim();
+        navigator.clipboard.writeText(email).then(function () {
+          status.textContent = "Copied";
+          window.setTimeout(function () {
+            status.textContent = "";
+          }, 1600);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
