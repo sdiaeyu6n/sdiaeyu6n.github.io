@@ -49,9 +49,10 @@
         <li><span class="news-date">2026</span><span><a href="#pub-exposing-blindspots">Exposing Blindspots accepted to IASEAI 2026 Main Conference.</a></span></li>
         <li><span class="news-date">2025-2026</span><span>Fully funded by the Korean government and Dongguk University, completed a 6-month visiting researcher term at the Carnegie Mellon University Robotics Institute (BIG Lab).</span></li>
         <li><span class="news-date">2025</span><span>Following the Minister's Award at ICT Challenge 2024, attended CES 2025 with full support from ITRC.</span></li>
-        <li><span class="news-date">2024</span><span>Started M.S./Ph.D. program in the Machine Learning Lab at Dongguk University.</span></li>
-        <li><span class="news-date">2023-2024</span><span>Received approximately USD 20,000 in Korean government funding and worked for one year as an intern at Cipherome, Inc. in San Jose, CA.</span></li>
+        <li class="news-extra is-hidden"><span class="news-date">2024</span><span>Started M.S./Ph.D. program in the Machine Learning Lab at Dongguk University.</span></li>
+        <li class="news-extra is-hidden"><span class="news-date">2023-2024</span><span>Received approximately USD 20,000 in Korean government funding and worked for one year as an intern at Cipherome, Inc. in San Jose, CA.</span></li>
       </ul>
+      <button type="button" class="news-toggle-button" id="news-toggle-btn" aria-expanded="false">Show More</button>
     </section>
 
     <section class="section" id="publications">
@@ -397,6 +398,19 @@
           }, 1600);
         });
       });
+
+      var newsToggleBtn = document.getElementById("news-toggle-btn");
+      var hiddenNewsItems = document.querySelectorAll(".news-extra");
+      if (newsToggleBtn && hiddenNewsItems.length > 0) {
+        newsToggleBtn.addEventListener("click", function () {
+          var willExpand = newsToggleBtn.getAttribute("aria-expanded") !== "true";
+          hiddenNewsItems.forEach(function (item) {
+            item.classList.toggle("is-hidden", !willExpand);
+          });
+          newsToggleBtn.setAttribute("aria-expanded", willExpand ? "true" : "false");
+          newsToggleBtn.textContent = willExpand ? "Show Less" : "Show More";
+        });
+      }
     })();
   </script>
 </body>
