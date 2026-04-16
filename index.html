@@ -220,7 +220,7 @@
                   <figcaption class="pub-caption">Architecture of the proposed CGQR-Net. HRNet extracts multi-resolution features from the input echocardiography image, and a coarse segmentation head provides an initial structural prediction. Contours extracted from the coarse mask are converted into query embeddings and used to refine fused multi-scale features through cross-attention. The refined representation is then passed to segmentation and boundary heads to produce the final boundary-aware multi-class segmentation.</figcaption>
                 </figure>
               </div>
-              <p class="pub-abstract">Accurate cardiac ultrasound segmentation is critical for reliable assessment of ventricular function in intelligent healthcare systems. However, echocardiographic images are inherently challenging due to low contrast, speckle noise, irregular anatomical boundaries, and significant domain shift across acquisition devices and patient populations. Existing methods, primarily driven by appearance-based learning, often struggle to maintain boundary precision and structural consistency under these conditions. To address these limitations, we propose a Contour-Guided Query Refinement Network (CGQR-Net) for boundary-aware cardiac ultrasound segmentation.</p>
+              <p class="pub-abstract">Accurate cardiac ultrasound segmentation is critical for reliable assessment of ventricular function in intelligent healthcare systems. However, echocardiographic images are inherently challenging due to low contrast, speckle noise, irregular anatomical boundaries, and significant domain shift across acquisition devices and patient populations. Existing methods, primarily driven by appearance-based learning, often struggle to maintain boundary precision and structural consistency under these conditions. To address these limitations, we propose a Contour-Guided Query Refinement Network (CGQR-Net) for boundary-aware cardiac ultrasound segmentation. The proposed framework performs effective information fusion by integrating multi-resolution feature representations with contour-derived structural priors. Specifically, a High-Resolution Network (HRNet) backbone preserves high-resolution spatial information while capturing multi-scale context. A coarse segmentation is first generated, from which anatomical contours are extracted and encoded into learnable query embeddings. These contour-guided queries interact with fused feature maps through cross-attention, enabling structure-aware refinement that enhances boundary delineation and suppresses noise-induced artifacts. In addition, a dual-head supervision strategy jointly optimizes segmentation and boundary predictions to enforce structural consistency. The proposed method is evaluated on the Cardiac Acquisitions for Multi-structure Ultrasound Segmentation (CAMUS) dataset and further validated on the CardiacNet dataset to assess cross-dataset generalization. Experimental results demonstrate that CGQR-Net achieves superior segmentation accuracy, improved boundary precision, and strong robustness across different imaging conditions. These findings highlight the effectiveness of integrating contour-level structural information with feature-level representations, providing a robust and generalizable solution for cardiac ultrasound segmentation in real-world clinical and consumer healthcare applications.</p>
             </div>
           </details>
         </li>
@@ -231,7 +231,7 @@
           <div class="pub-venue"><em>arXiv preprint</em>, 2025 (Under Review).</div>
           <div class="pub-links">
             <a href="https://zihos.github.io/StableSketcher/" target="_blank" rel="noopener">Project Page</a> /
-            <a href="https://arxiv.org/abs/2508.10883" target="_blank" rel="noopener">Paper</a> /
+            <a href="https://arxiv.org/abs/2510.20093" target="_blank" rel="noopener">Paper</a> /
             <a href="https://huggingface.co/datasets/ziiio/SketchDUO" target="_blank" rel="noopener">Dataset</a>
           </div>
           <details class="pub-details">
@@ -293,7 +293,7 @@
       <h2>Research & Working Experience</h2>
       <div class="experience-grid">
         <article class="experience-card">
-          <img class="experience-brand-logo" src="images/cmu-logo.svg" alt="Carnegie Mellon University logo">
+          <img class="experience-brand-logo" src="images/cmu-logo.png" alt="Carnegie Mellon University logo">
           <h3>Visiting Research Scholar</h3>
           <p class="experience-org">Bot Intelligence Group, Carnegie Mellon University</p>
           <p class="experience-meta"><span>Pittsburgh, PA, USA</span><span>Aug 2025 - Feb 2026</span></p>
