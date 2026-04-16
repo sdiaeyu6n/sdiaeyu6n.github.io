@@ -36,9 +36,20 @@
       </div>
     </section>
 
+    <section class="section" id="news">
+      <h2>News</h2>
+      <ul class="news-list">
+        <li><span class="news-date">2026</span><span>"SEA" accepted to CVPR 2026.</span></li>
+        <li><span class="news-date">2026</span><span>"Exposing Blindspots" accepted to IASEAI 2026 Main Conference.</span></li>
+        <li><span class="news-date">2026</span><span>"Before We Trust Them" accepted to AAAI 2026 Summer Symposium Series.</span></li>
+        <li><span class="news-date">2026</span><span>Served as Teaching Assistant for Introduction to Programming and Convergence Capstone Design.</span></li>
+        <li><span class="news-date">2025-2026</span><span>Visiting Research Scholar, Bot Intelligence Group, Carnegie Mellon University.</span></li>
+      </ul>
+    </section>
+
     <section class="section" id="publications">
       <h2>Publications</h2>
-      <p class="section-note">Published/Accepted papers are listed first, followed by preprints and under-review work.</p>
+      <p class="section-note">Published and accepted papers.</p>
       <ol class="pub-list">
         <li>
           <div class="pub-title"><a href="https://arxiv.org/abs/2603.28363" target="_blank" rel="noopener">SEA: Evaluating Sketch Abstraction Efficiency via Element-level Commonsense Visual Question Answering</a></div>
@@ -61,6 +72,7 @@
             </div>
           </details>
         </li>
+
         <li>
           <div class="pub-title"><a href="https://www.nature.com/articles/s41598-026-45014-1" target="_blank" rel="noopener">Machine Learning Prediction of Common Bile Duct Stones Using Synthetic Data to Guide Emergency ERCP Decisions</a></div>
           <div class="pub-authors">S. Kang*, N. Park*, I. S. Shin*, E. Lee, <strong>S. Choi</strong>, J. Jung, J. K. Lee, Y. N. Lee, J. H. Moon, K. R. Joo, J. S. Kim, and J. Kim.</div>
@@ -78,6 +90,7 @@
             </div>
           </details>
         </li>
+
         <li class="first-author pub-with-logo">
           <img class="pub-logo" src="images/cmu-logo.png" alt="CMU logo">
           <div class="pub-title"><a href="https://arxiv.org/abs/2510.20042" target="_blank" rel="noopener">Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models</a> <span class="label-first">First Author</span></div>
@@ -96,6 +109,7 @@
             </div>
           </details>
         </li>
+
         <li class="pub-with-logo">
           <img class="pub-logo" src="images/cmu-logo.png" alt="CMU logo">
           <div class="pub-title"><a href="https://arxiv.org/abs/2601.05529" target="_blank" rel="noopener">Before We Trust Them: Decision-Making Failures in Navigation of Foundation Models</a></div>
@@ -114,44 +128,35 @@
             </div>
           </details>
         </li>
+
         <li>
-          <div class="pub-title"><a href="https://arxiv.org/abs/2603.28110" target="_blank" rel="noopener">Contour-Guided Query-Based Feature Fusion for Boundary-Aware and Generalizable Cardiac Ultrasound Segmentation</a></div>
-          <div class="pub-authors">Z. Ullah, <strong>S. Choi</strong>, and J. Kim.</div>
-          <div class="pub-venue"><em>arXiv preprint</em>, 2026 (Under Review).</div>
+          <div class="pub-title">Dedicated Delivery Platform Based on the User Experience of the Visually Impaired</div>
+          <div class="pub-authors">Y. Kim, Y. Kim, Y. Shin, J. Lee, and <strong>S. Choi</strong>.</div>
+          <div class="pub-venue"><em>KIPS</em>, 2022, pp. 974-976.</div>
+          <div class="pub-summary">English summary: This paper proposes an accessibility-first delivery platform informed by user experience research with visually impaired users, focusing on practical usability in real delivery workflows.</div>
+          <div class="pub-links">
+            <a href="data/BBlink_kor.pdf" target="_blank" rel="noopener">Original Korean Paper</a> /
+            <a href="data/BBlink_eng.pdf" target="_blank" rel="noopener">Translated Version</a>
+          </div>
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
               <div class="pub-fig-grid">
                 <figure class="pub-figure-block">
-                  <img class="pub-figure" src="images/pubs/cardiac/Figure_1.png" alt="CGQR-Net architecture figure">
-                  <figcaption class="pub-caption">Architecture of the proposed CGQR-Net. HRNet extracts multi-resolution features from the input echocardiography image, and a coarse segmentation head provides an initial structural prediction. Contours extracted from the coarse mask are converted into query embeddings and used to refine fused multi-scale features through cross-attention. The refined representation is then passed to segmentation and boundary heads to produce the final boundary-aware multi-class segmentation.</figcaption>
+                  <img class="pub-figure" src="images/pubs/delivery/table.png" alt="BBlink interview findings table">
+                  <figcaption class="pub-caption">Key interview findings and corresponding design implications.</figcaption>
                 </figure>
               </div>
-              <p class="pub-abstract">Accurate cardiac ultrasound segmentation is critical for reliable assessment of ventricular function in intelligent healthcare systems. However, echocardiographic images are inherently challenging due to low contrast, speckle noise, irregular anatomical boundaries, and significant domain shift across acquisition devices and patient populations. To address these limitations, we propose a Contour-Guided Query Refinement Network (CGQR-Net) for boundary-aware segmentation. The framework integrates HRNet-based multi-resolution features with contour-derived query embeddings via cross-attention and jointly optimizes segmentation and boundary prediction.</p>
+              <p class="pub-abstract">As the online food-delivery market expanded rapidly after the COVID-19 pandemic, mobile ordering platforms became mainstream. However, the functions and user interfaces (UIs) of existing delivery services were largely designed from the perspective of non-disabled users. Interviews with visually impaired users further revealed that the complexity of current delivery applications leads to substantial time and effort during routine ordering tasks. To address this problem, this paper presents BBlink, a user-experience-centered delivery platform designed for visually impaired users.</p>
             </div>
           </details>
         </li>
-        <li>
-          <div class="pub-title">StableSketcher: Enhancing Diffusion Model for Pixel-based Sketch Generation via Visual Question Answering Feedback</div>
-          <div class="pub-authors">J. Park, <strong>S. Choi</strong>, J. Seo, and J. Kim.</div>
-          <div class="pub-venue"><em>arXiv preprint</em>, 2025 (Under Review).</div>
-          <details class="pub-details">
-            <summary>View abstract & figure</summary>
-            <div class="pub-detail-grid">
-              <div class="pub-fig-grid">
-                <figure class="pub-figure-block">
-                  <img class="pub-figure" src="images/pubs/stablesketcher/teaser.png" alt="StableSketcher teaser figure">
-                  <figcaption class="pub-caption">Overview of the StableSketcher framework and the SketchDUO dataset. StableSketcher generates sketch images from text prompts using Stable Diffusion with a fine-tuned VAE and improves prompt fidelity through VQA-based reward feedback. SketchDUO provides sketch images, captions, and QA sets.</figcaption>
-                </figure>
-                <figure class="pub-figure-block">
-                  <img class="pub-figure" src="images/pubs/stablesketcher/data.png" alt="SketchDUO construction figure">
-                  <figcaption class="pub-caption">SketchDUO construction process. The pipeline proceeds from left to right: class selection and sketch definition, positive sketch collection and negative sketch construction, and augmentation. In caption generation, GPT-4o produces template-constrained instance-level captions that are manually refined before TIFA-based QA pairs are constructed. The final SketchDUO dataset contains 35,851 sketch-caption pairs and 54,370 QA pairs.</figcaption>
-                </figure>
-              </div>
-              <p class="pub-abstract">Although recent advancements in diffusion models have significantly enriched image quality, synthesizing pixel-based human-drawn sketches remains challenging. We propose StableSketcher, a framework that improves prompt fidelity in sketch generation. It fine-tunes the variational autoencoder for sketch-oriented latent decoding and introduces a reinforcement-learning reward based on visual question answering to improve text-image alignment and semantic consistency. We also introduce SketchDUO, an instance-level sketch dataset paired with captions and QA signals.</p>
-            </div>
-          </details>
-        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="preprints">
+      <h2>Preprints</h2>
+      <ol class="pub-list">
         <li class="first-author pub-with-logo">
           <img class="pub-logo" src="images/cmu-logo.png" alt="CMU logo">
           <div class="pub-title"><a href="https://arxiv.org/abs/2602.16149" target="_blank" rel="noopener">Evaluating Demographic Misrepresentation in Image-to-Image Portrait Editing</a> <span class="label-first">First Author</span></div>
@@ -173,25 +178,43 @@
             </div>
           </details>
         </li>
+
         <li>
-          <div class="pub-title">Dedicated Delivery Platform Based on the User Experience of the Visually Impaired</div>
-          <div class="pub-authors">Y. Kim, Y. Kim, Y. Shin, J. Lee, and <strong>S. Choi</strong>.</div>
-          <div class="pub-venue"><em>KIPS</em>, 2022, pp. 974-976.</div>
-          <div class="pub-summary">English summary: This paper proposes an accessibility-first delivery platform informed by user experience research with visually impaired users, focusing on practical usability in real delivery workflows.</div>
-          <div class="pub-links">
-            <a href="data/BBlink_kor.pdf" target="_blank" rel="noopener">Original Korean Paper</a> /
-            <a href="data/BBlink_eng.pdf" target="_blank" rel="noopener">Translated Version</a>
-          </div>
+          <div class="pub-title"><a href="https://arxiv.org/abs/2603.28110" target="_blank" rel="noopener">Contour-Guided Query-Based Feature Fusion for Boundary-Aware and Generalizable Cardiac Ultrasound Segmentation</a></div>
+          <div class="pub-authors">Z. Ullah, <strong>S. Choi</strong>, and J. Kim.</div>
+          <div class="pub-venue"><em>arXiv preprint</em>, 2026 (Under Review).</div>
           <details class="pub-details">
             <summary>View abstract & figure</summary>
             <div class="pub-detail-grid">
               <div class="pub-fig-grid">
                 <figure class="pub-figure-block">
-                  <img class="pub-figure" src="images/pubs/delivery/table.png" alt="BBlink interview findings table">
-                  <figcaption class="pub-caption">Key interview findings and corresponding design implications.</figcaption>
+                  <img class="pub-figure" src="images/pubs/cardiac/Figure_1.png" alt="CGQR-Net architecture figure">
+                  <figcaption class="pub-caption">Architecture of the proposed CGQR-Net. HRNet extracts multi-resolution features from the input echocardiography image, and a coarse segmentation head provides an initial structural prediction. Contours extracted from the coarse mask are converted into query embeddings and used to refine fused multi-scale features through cross-attention. The refined representation is then passed to segmentation and boundary heads to produce the final boundary-aware multi-class segmentation.</figcaption>
                 </figure>
               </div>
-              <p class="pub-abstract">As the online food-delivery market expanded rapidly after the COVID-19 pandemic, mobile ordering platforms became mainstream. However, existing delivery-service interfaces were largely designed from the perspective of non-disabled users. Interviews with visually impaired users showed that current application complexity causes substantial time and effort during routine ordering tasks. To address this problem, this paper presents BBlink, a user-experience-centered delivery platform designed for visually impaired users, with a simplified service flow, customized interface modes, and enhanced accessibility.</p>
+              <p class="pub-abstract">Accurate cardiac ultrasound segmentation is critical for reliable assessment of ventricular function in intelligent healthcare systems. However, echocardiographic images are inherently challenging due to low contrast, speckle noise, irregular anatomical boundaries, and significant domain shift across acquisition devices and patient populations. Existing methods, primarily driven by appearance-based learning, often struggle to maintain boundary precision and structural consistency under these conditions. To address these limitations, we propose a Contour-Guided Query Refinement Network (CGQR-Net) for boundary-aware cardiac ultrasound segmentation.</p>
+            </div>
+          </details>
+        </li>
+
+        <li>
+          <div class="pub-title">StableSketcher: Enhancing Diffusion Model for Pixel-based Sketch Generation via Visual Question Answering Feedback</div>
+          <div class="pub-authors">J. Park, <strong>S. Choi</strong>, J. Seo, and J. Kim.</div>
+          <div class="pub-venue"><em>arXiv preprint</em>, 2025 (Under Review).</div>
+          <details class="pub-details">
+            <summary>View abstract & figure</summary>
+            <div class="pub-detail-grid">
+              <div class="pub-fig-grid">
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/stablesketcher/teaser.png" alt="StableSketcher teaser figure">
+                  <figcaption class="pub-caption">Overview of the StableSketcher framework and the SketchDUO dataset. StableSketcher generates sketch images from text prompts using Stable Diffusion with a fine-tuned VAE and improves prompt fidelity through VQA-based reward feedback. SketchDUO provides sketch images, captions, and QA sets.</figcaption>
+                </figure>
+                <figure class="pub-figure-block">
+                  <img class="pub-figure" src="images/pubs/stablesketcher/data.png" alt="SketchDUO construction figure">
+                  <figcaption class="pub-caption">SketchDUO construction process. The pipeline proceeds from left to right: class selection and sketch definition, positive sketch collection and negative sketch construction, and augmentation. In caption generation, GPT-4o produces template-constrained instance-level captions that are manually refined before TIFA-based QA pairs are constructed. The final SketchDUO dataset contains 35,851 sketch-caption pairs and 54,370 QA pairs.</figcaption>
+                </figure>
+              </div>
+              <p class="pub-abstract">Although recent advancements in diffusion models have significantly enriched the quality of generated images, challenges remain in synthesizing pixel-based human-drawn sketches, a representative example of abstract expression. To combat these challenges, we propose StableSketcher, a novel framework that empowers diffusion models to generate hand-drawn sketches with high prompt fidelity. Within this framework, we fine-tune the variational autoencoder to optimize latent decoding and integrate a reward function for reinforcement learning based on visual question answering. Project page: https://zihos.github.io/StableSketcher</p>
             </div>
           </details>
         </li>
@@ -200,6 +223,7 @@
 
     <section class="section" id="projects">
       <h2>Projects</h2>
+
       <div class="project-card project-with-logo">
         <img class="project-logo" src="images/cmu-logo.png" alt="CMU logo">
         <h3>VLM-guided Collaborative Robotic Cinematography</h3>
@@ -208,17 +232,21 @@
         <img class="project-image" src="images/colors.jpg" alt="Stagehand robot collaborative cinematography visual">
         <div class="project-links">
           <a class="button" href="https://youtu.be/B20y1IBAyo8?si=Xt-n1ZKxnEVtFBXh" target="_blank" rel="noopener">Watch Demo Film</a>
-          <a class="button" href="data/Stagehand_Robot.pdf" target="_blank" rel="noopener">View Proposal</a>
         </div>
+        <details class="doc-toggle">
+          <summary>Open Proposal in page</summary>
+          <iframe src="data/Stagehand_Robot.pdf" title="Stagehand Robot Proposal"></iframe>
+        </details>
       </div>
 
       <div class="project-card">
         <h3>Mobile Data Loss Prevention System for Real-Time Personal Data Monitoring</h3>
         <p class="project-meta">Undergraduate Capstone Design, Aug 2022 to Dec 2022</p>
         <p>Developed an Android app to monitor real-time network traffic and detect potential personal data leakage through schema design and regex-based matching.</p>
-        <div class="project-links">
-          <a class="button button-muted" href="#" aria-disabled="true">Project Material (to be added)</a>
-        </div>
+        <details class="doc-toggle">
+          <summary>Open Project Material in page (to be added)</summary>
+          <p class="doc-placeholder">PDF not uploaded yet. Add the file in `data/` and I can wire it here.</p>
+        </details>
       </div>
 
       <div class="project-card project-with-logo">
@@ -226,10 +254,54 @@
         <h3>IoT Farm Firefighting System using Simplified Data Transmission with UAV and LoRa</h3>
         <p class="project-meta">Purdue University Visiting Scholar Project, Oct 2021 to Dec 2021</p>
         <p>Designed a UAV and LoRa-based IoT firefighting system for farm environments, focusing on lightweight data transmission and robust remote monitoring.</p>
-        <div class="project-links">
-          <a class="button" href="data/Purdue.pdf" target="_blank" rel="noopener">View Project Material</a>
-        </div>
+        <details class="doc-toggle">
+          <summary>Open Project Material in page</summary>
+          <iframe src="data/Purdue.pdf" title="Purdue Project Material"></iframe>
+        </details>
       </div>
+    </section>
+
+    <section class="section" id="research-experience">
+      <h2>Research Experience</h2>
+      <ul class="item-list">
+        <li><strong>Visiting Research Scholar, Bot Intelligence Group, Carnegie Mellon University</strong> (Aug 2025 - Feb 2026)</li>
+        <li><strong>M.S./Ph.D. Researcher, Machine Learning Lab, Dongguk University</strong> (Mar 2024 - Present)</li>
+        <li><strong>Undergraduate Researcher, AI Lab, Dongguk University</strong> (Feb 2022 - Dec 2022)</li>
+        <li><strong>Visiting Scholar, M2M Lab, Purdue University</strong> (Oct 2021 - Dec 2021)</li>
+      </ul>
+    </section>
+
+    <section class="section" id="teaching-working">
+      <h2>Teaching & Working Experiences</h2>
+      <ul class="item-list">
+        <li><strong>Teaching Assistant:</strong> Introduction to Programming (Spring 2026), Convergence Capstone Design (Spring 2026), Computer System (Fall 2024, Spring 2025), Computer Network and Security (Spring 2024, Spring 2025), Data Science Capstone Design (Spring/Fall 2024, Spring 2025)</li>
+        <li><strong>Teaching Materials Author:</strong> Open Source Software Project (Docker & Git), Data Science Capstone Design (Slack & Git), Computer Network and Security (Socket Programming & Wireshark)</li>
+        <li><strong>Intern, Cipherome Inc.</strong> Technology Team - Data Analysis & Product Engineering (Mar 2023 - Feb 2024)</li>
+        <li><strong>Student Volunteer, IJCAI 2024 Volunteer Program</strong> (Jeju, South Korea)</li>
+      </ul>
+    </section>
+
+    <section class="section" id="intellectual-property">
+      <h2>Intellectual Property</h2>
+      <ul class="item-list">
+        <li>Method and System for Sketch Image Generation. Korean Patent Application No. 10-2025-0108830 (filed Aug 7, 2025).</li>
+        <li>Machine Learning-Based Prediction Using Synthetic Data: A Novel Multicenter Model for Guiding Disease Diagnosis Decision-Making. Software Registration No. C-2025-031588 (registered Aug 18, 2025).</li>
+        <li>Machine Learning-Based Prediction of Common Bile Duct Stones Using Synthetic Data: A Novel Multicenter Model for Guiding ERCP Decision-Making. Software Registration No. C-2025-030387 (registered Aug 8, 2025).</li>
+        <li>3D Image-Tabular Fusion Model for Clinical Reasoning of Micro-Localized Lesions. Software Registration No. C-2025-030390 (registered Aug 8, 2025).</li>
+      </ul>
+    </section>
+
+    <section class="section" id="honors">
+      <h2>Achievements & Honors</h2>
+      <ul class="item-list">
+        <li>ICT Challenge 2024 - 1st Place (Ministry of Science and ICT, South Korea)</li>
+        <li>Merit-Based Scholarship (2022-2023), Dongguk University</li>
+        <li>Academic Excellence Award (2020-2022), Dongguk University</li>
+        <li>Software-Centered Academic Excellence Scholarship (2021), Dongguk University</li>
+        <li>Dongguk Leader Scholarship - Student Representative (2021), Dongguk University</li>
+        <li>ICT Convergence Services Idea Competition based on 5G and AI - 1st Place (2021)</li>
+        <li>Academic Excellence Scholarship (2020), Dongguk University</li>
+      </ul>
     </section>
 
     <section class="section" id="contact">
