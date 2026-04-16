@@ -68,17 +68,18 @@ p {
 
 .interests {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-wrap: nowrap;
+  gap: 0.42rem;
   margin: 0.9rem 0;
 }
 
 .interests span {
-  padding: 0.25rem 0.65rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 999px;
   background: var(--tag-bg);
   color: var(--primary-strong);
-  font-size: 0.86rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
 }
 
 .profile-wrap {
@@ -559,3 +560,12 @@ a {
     margin-top: 0;
   }
 }
+  .interests {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .interests span {
+    padding: 0.25rem 0.65rem;
+    font-size: 0.86rem;
+  }
