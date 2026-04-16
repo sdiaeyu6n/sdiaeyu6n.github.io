@@ -393,17 +393,14 @@ p {
   padding: 0.8rem 0.9rem;
 }
 
-.experience-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.65rem;
-}
-
-.experience-logo {
-  width: 44px;
+.experience-brand-logo {
+  display: block;
+  max-width: 176px;
+  max-height: 44px;
+  width: auto;
   height: auto;
-  margin-top: 0.1rem;
-  flex-shrink: 0;
+  object-fit: contain;
+  margin-bottom: 0.55rem;
 }
 
 .experience-org {
@@ -422,6 +419,22 @@ p {
   margin: 0.4rem 0 0;
   font-size: 0.9rem;
   color: #374151;
+}
+
+.split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.split-grid .section {
+  margin-top: 0;
+}
+
+.subsection-title {
+  margin: 0.65rem 0 0.35rem;
+  font-size: 1.03rem;
 }
 
 .button-muted {
@@ -483,5 +496,11 @@ a {
 
   .experience-grid {
     grid-template-columns: 1fr;
+  }
+
+  .split-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 0;
   }
 }
