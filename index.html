@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sieun Choi</title>
-  <meta name="description" content="Official academic homepage of Sieun Choi, M.S./Ph.D. Student in Artificial Intelligence at Dongguk University. Research in multimodal AI, generative AI, embodied AI, and human-robot interaction.">
+  <meta name="description" content="Sieun Choi, M.S./Ph.D. Student in Artificial Intelligence at Dongguk University">
   <meta name="keywords" content="Sieun Choi, Choi Sieun, 최시은, Sieun Choi Dongguk University, Sieun Choi AI, Multimodal AI, Human-Robot Interaction, Robotics">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://sdiaeyu6n.github.io/">
   <meta property="og:title" content="Sieun Choi">
-  <meta property="og:description" content="Academic homepage of Sieun Choi, M.S./Ph.D. Student in AI at Dongguk University.">
+  <meta property="og:description" content="Sieun Choi, M.S./Ph.D. Student in Artificial Intelligence at Dongguk University">
   <meta property="og:url" content="https://sdiaeyu6n.github.io/">
   <meta property="og:type" content="profile">
   <meta property="og:image" content="https://sdiaeyu6n.github.io/images/image.jpg">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22/%3E">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -136,7 +137,7 @@
             <summary>View abstract</summary>
             <div class="pub-detail-grid">
               <div class="pub-fig-grid">
-                <figure class="pub-figure-block">
+                <figure class="pub-figure-block pub-figure-compact-block">
                   <img class="pub-figure" src="images/pubs/ercp/fig1.png" alt="ERCP study flow chart">
                   <figcaption class="pub-caption">Study flow chart. This flowchart illustrates the patient selection and data allocation used for the two-stage validation framework. On the left, the DUMC cohort (2010-2023) is depicted for model development and internal validation. After applying exclusion criteria, 733 patients were separated into training, validation, and hold-out test subsets. The training set was augmented with SMOTE and integrated with curated synthetic data to form the final combined training dataset. The validation dataset facilitated hyperparameter optimization, and the hold-out test set was designated for final internal performance assessment. On the right, external validation was performed using a completely independent dataset from SCHBC and KHNMC (2023-2024).</figcaption>
                 </figure>
@@ -242,6 +243,27 @@
                 </figure>
               </div>
               <p class="pub-abstract">Demographic bias in text-to-image (T2I) generation is well studied, yet demographic-conditioned failures in instruction-guided image-to-image (I2I) editing remain underexplored. We examine whether identical edit instructions yield systematically different outcomes across subject demographics in open-weight I2I editors. We formalize two failure modes: Soft Erasure, where edits are silently weakened or ignored in the output image, and Stereotype Replacement, where edits introduce unrequested, stereotype-consistent attributes. We introduce a controlled benchmark that probes demographic-conditioned behavior by generating and editing portraits conditioned on race, gender, and age using a diagnostic prompt set, and evaluate multiple editors with vision-language model (VLM) scoring and human evaluation. Our analysis shows that identity preservation failures are pervasive, demographically uneven, and shaped by implicit social priors, including occupation-driven gender inference. Finally, we demonstrate that a prompt-level identity constraint, without model updates, can substantially reduce demographic change for minority groups while leaving majority-group portraits largely unchanged, revealing asymmetric identity priors in current editors. Together, our findings establish identity preservation as a central and demographically uneven failure mode in I2I editing and motivate demographic-robust editing systems.</p>
+            </div>
+          </details>
+        </li>
+
+        <li id="pub-bbr-net">
+          <div class="pub-title">BBR-Net: Boundary-Balanced Replay for Continual Medical Image Segmentation</div>
+          <div class="pub-authors">Zahid Ullah, <strong>Sieun Choi</strong>, and Jihie Kim.</div>
+          <div class="pub-venue"><em>arXiv preprint</em>, 2026 (Under Review).</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2606.14731" target="_blank" rel="noopener">Paper</a>
+          </div>
+          <details class="pub-details">
+            <summary>View abstract</summary>
+            <div class="pub-detail-grid">
+              <div class="pub-fig-grid">
+                <figure class="pub-figure-block pub-figure-compact-block">
+                  <img class="pub-figure" src="images/pubs/bbr-net/figure.png" alt="BBR-Net boundary-balanced replay mechanism figure">
+                  <figcaption class="pub-caption">Overview of the proposed boundary-aware class-balanced replay mechanism. Source-task samples are evaluated as replay candidates using class-presence and boundary-complexity statistics, which are combined into a priority score for replay-buffer construction. High-priority samples are inserted or retained through priority-based buffer updates, and replay mini-batches are sampled according to priority-proportional probabilities during target-task training. Red, green, and blue regions denote the left ventricular endocardium, left ventricular epicardium, and left atrium, respectively, while yellow contours indicate extracted boundary maps.</figcaption>
+                </figure>
+              </div>
+              <p class="pub-abstract">Continual learning for medical image segmentation remains challenging under domain shift because replay-based methods often preserve appearance information without explicitly modeling anatomical structure. This study investigates whether structural consistency governs knowledge retention in continual cardiac ultrasound segmentation. We propose the Boundary-Balanced Replay Network (BBR-Net), which selects replay samples using boundary-aware priority and class balance to preserve anatomically informative regions. The method is evaluated on CAMUS and CardiacNet under forward (CAMUS to CardiacNet) and reverse (CardiacNet to CAMUS) task orders. In the forward setting, BBR-Net retains source-task performance close to an offline joint-training reference, while markedly reducing catastrophic forgetting and preserving competitive target-task adaptation. Ablation results show that boundary-aware prioritization contributes to retention and improves the balance between source-task preservation and target-task adaptation when combined with class-aware sampling. In contrast, the reverse setting reveals that structure-aware replay fails when initial representations are learned from noisy and structurally inconsistent data. To isolate this effect, we conduct a controlled structural perturbation analysis by progressively corrupting source-task boundaries while keeping the dataset, architecture, and training protocol fixed. Forgetting increases consistently as structural reliability decreases, suggesting that replay effectiveness is strongly influenced by the quality of stored structural information, rather than by memory capacity alone. These findings indicate that preserving anatomical structure under domain shift is a central factor in continual medical image segmentation, and that replay mechanisms should account for structural reliability to support robust knowledge retention.</p>
             </div>
           </details>
         </li>

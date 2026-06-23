@@ -341,6 +341,11 @@ a {
   margin: 0;
 }
 
+.pub-figure-compact-block {
+  width: min(100%, 760px);
+  margin: 0 auto;
+}
+
 .pub-figure {
   width: 100%;
   border: 1px solid var(--line);
